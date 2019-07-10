@@ -130,8 +130,12 @@ abstract class AccessToken implements AccessTokenInterface
 
     private function tokenLogger($token)
     {
-        $logger = Logger::init(Logger::CHANNEL_WECHAT);
-        $logger->info('refreshToken',['token'=>$token]);
+        try {
+            $logger = Logger::init(Logger::CHANNEL_WECHAT);
+            $logger->info('refreshToken', ['token' => $token]);
+        }catch (Exception $exception){
+            return $this;
+        }
     }
 
     /**
