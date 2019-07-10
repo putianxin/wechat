@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Ptx\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class DeviceClient.
@@ -24,7 +24,7 @@ class DeviceClient extends BaseClient
     /**
      * @param array $data
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function apply(array $data)
     {
@@ -36,7 +36,7 @@ class DeviceClient extends BaseClient
      *
      * @param int $applyId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function status(int $applyId)
     {
@@ -53,7 +53,7 @@ class DeviceClient extends BaseClient
      * @param array  $deviceIdentifier
      * @param string $comment
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function update(array $deviceIdentifier, string $comment)
     {
@@ -71,7 +71,7 @@ class DeviceClient extends BaseClient
      * @param array $deviceIdentifier
      * @param int   $poiId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
      * @throws InvalidArgumentException
      */
@@ -90,7 +90,7 @@ class DeviceClient extends BaseClient
      * @param int    $poiId
      * @param string $appId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function bindThirdPoi(array $deviceIdentifier, int $poiId, string $appId)
     {
@@ -109,7 +109,7 @@ class DeviceClient extends BaseClient
      *
      * @param array $deviceIdentifiers
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function listByIds(array $deviceIdentifiers)
     {
@@ -127,7 +127,7 @@ class DeviceClient extends BaseClient
      * @param int $lastId
      * @param int $count
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function list(int $lastId, int $count)
     {
@@ -147,7 +147,7 @@ class DeviceClient extends BaseClient
      * @param int $lastId
      * @param int $count
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function listByApplyId(int $applyId, int $lastId, int $count)
     {
@@ -166,7 +166,7 @@ class DeviceClient extends BaseClient
      *
      * @param array $params
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function search(array $params)
     {

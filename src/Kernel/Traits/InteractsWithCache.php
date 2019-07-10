@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Traits;
+namespace Ptx\Kernel\Traits;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\ServiceContainer;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\SimpleCache\CacheInterface as SimpleCacheInterface;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -36,7 +36,7 @@ trait InteractsWithCache
      *
      * @return \Psr\SimpleCache\CacheInterface
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function getCache()
     {
@@ -60,7 +60,7 @@ trait InteractsWithCache
      *
      * @return $this
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function setCache($cache)
     {

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Agent;
+namespace Ptx\Work\Agent;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * This is WeWork Agent Client.
@@ -27,7 +27,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function get(int $agentId)
     {
@@ -46,7 +46,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function set(int $agentId, array $attributes)
     {
@@ -58,7 +58,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function list()
     {

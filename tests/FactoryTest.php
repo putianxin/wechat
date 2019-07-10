@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests;
+namespace Ptx\Tests;
 
-use EasyWeChat\Factory;
+use Ptx\Factory;
 
 class FactoryTest extends TestCase
 {
@@ -25,8 +25,8 @@ class FactoryTest extends TestCase
             'app_id' => 'corpid@123',
         ]);
 
-        $this->assertInstanceOf(\EasyWeChat\OfficialAccount\Application::class, $officialAccount);
-        $this->assertInstanceOf(\EasyWeChat\OfficialAccount\Application::class, $officialAccountFromMake);
+        $this->assertInstanceOf(\Ptx\OfficialAccount\Application::class, $officialAccount);
+        $this->assertInstanceOf(\Ptx\OfficialAccount\Application::class, $officialAccountFromMake);
 
         $expected = [
             'app_id' => 'corpid@123',
@@ -35,32 +35,32 @@ class FactoryTest extends TestCase
         $this->assertArraySubset($expected, $officialAccountFromMake['config']->all());
 
         $this->assertInstanceOf(
-            \EasyWeChat\OfficialAccount\Application::class,
+            \Ptx\OfficialAccount\Application::class,
             Factory::officialAccount(['appid' => 'appid@456'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\OpenPlatform\Application::class,
+            \Ptx\OpenPlatform\Application::class,
             Factory::openPlatform(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\MiniProgram\Application::class,
+            \Ptx\MiniProgram\Application::class,
             Factory::miniProgram(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\Payment\Application::class,
+            \Ptx\Payment\Application::class,
             Factory::payment(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\BasicService\Application::class,
+            \Ptx\BasicService\Application::class,
             Factory::basicService(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\Work\Application::class,
+            \Ptx\Work\Application::class,
             Factory::work(['appid' => 'appid@789'])
         );
     }

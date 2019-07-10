@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Certficates;
+namespace Ptx\MicroMerchant\Certficates;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\MicroMerchant\Kernel\BaseClient;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\MicroMerchant\Kernel\BaseClient;
+use Ptx\MicroMerchant\Kernel\Exceptions\InvalidExtensionException;
 
 /**
  * Class Client.
@@ -28,12 +28,12 @@ class Client extends BaseClient
      *
      * @param bool $returnRaw
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\InvalidSignException
      */
     public function get(bool $returnRaw = false)
     {
@@ -82,7 +82,7 @@ class Client extends BaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
      */
     public function decrypt(array $encryptCertificate)
     {

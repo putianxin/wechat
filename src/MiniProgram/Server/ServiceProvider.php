@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Server;
+namespace Ptx\MiniProgram\Server;
 
-use EasyWeChat\MiniProgram\Encryptor;
-use EasyWeChat\OfficialAccount\Server\Guard;
-use EasyWeChat\OfficialAccount\Server\Handlers\EchoStrHandler;
+use Ptx\MiniProgram\Encryptor;
+use Ptx\OfficialAccount\Server\Guard;
+use Ptx\OfficialAccount\Server\Handlers\EchoStrHandler;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Jssdk;
+namespace Ptx\Work\Jssdk;
 
-use EasyWeChat\BasicService\Jssdk\Client as BaseClient;
+use Ptx\BasicService\Jssdk\Client as BaseClient;
 
 /**
  * Class Client.

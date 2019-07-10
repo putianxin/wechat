@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Base;
+namespace Ptx\MicroMerchant\Base;
 
-use EasyWeChat\MicroMerchant\Kernel\BaseClient;
+use Ptx\MicroMerchant\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -26,11 +26,11 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\EncryptException
      */
     public function submitApplication(array $params)
     {
@@ -50,10 +50,10 @@ class Client extends BaseClient
      * @param string $applymentId
      * @param string $businessCode
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getStatus(string $applymentId, string $businessCode = '')
     {
@@ -81,11 +81,11 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\EncryptException
      */
     public function upgrade(array $params)
     {
@@ -105,10 +105,10 @@ class Client extends BaseClient
      *
      * @param string $subMchId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getUpgradeStatus(string $subMchId = '')
     {

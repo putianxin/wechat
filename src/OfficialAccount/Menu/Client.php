@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Menu;
+namespace Ptx\OfficialAccount\Menu;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.

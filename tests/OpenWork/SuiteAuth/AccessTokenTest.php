@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenWork\SuiteAuth;
+namespace Ptx\Tests\OpenWork\SuiteAuth;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\SuiteAuth\AccessToken;
-use EasyWeChat\OpenWork\SuiteAuth\SuiteTicket;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenWork\SuiteAuth\AccessToken;
+use Ptx\OpenWork\SuiteAuth\SuiteTicket;
+use Ptx\Tests\TestCase;
 
 class AccessTokenTest extends TestCase
 {

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\OAuth;
+namespace Ptx\OpenPlatform\Authorizer\OfficialAccount\OAuth;
 
-use EasyWeChat\OpenPlatform\Application;
+use Ptx\OpenPlatform\Application;
 use Overtrue\Socialite\WeChatComponentInterface;
 
 /**
@@ -22,14 +22,14 @@ use Overtrue\Socialite\WeChatComponentInterface;
 class ComponentDelegate implements WeChatComponentInterface
 {
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Ptx\OpenPlatform\Application
      */
     protected $app;
 
     /**
      * ComponentDelegate Constructor.
      *
-     * @param \EasyWeChat\OpenPlatform\Application $app
+     * @param \Ptx\OpenPlatform\Application $app
      */
     public function __construct(Application $app)
     {

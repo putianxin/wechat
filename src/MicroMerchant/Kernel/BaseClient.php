@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Kernel;
+namespace Ptx\MicroMerchant\Kernel;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\MicroMerchant\Application;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException;
-use EasyWeChat\Payment\Kernel\BaseClient as PaymentBaseClient;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\Support;
+use Ptx\MicroMerchant\Application;
+use Ptx\MicroMerchant\Kernel\Exceptions\EncryptException;
+use Ptx\Payment\Kernel\BaseClient as PaymentBaseClient;
 
 /**
  * Class BaseClient.
@@ -33,7 +33,7 @@ class BaseClient extends PaymentBaseClient
     /**
      * BaseClient constructor.
      *
-     * @param \EasyWeChat\MicroMerchant\Application $app
+     * @param \Ptx\MicroMerchant\Application $app
      */
     public function __construct(Application $app)
     {
@@ -61,11 +61,11 @@ class BaseClient extends PaymentBaseClient
      * @param array  $query
      * @param bool   $returnResponse
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\InvalidSignException
      */
     public function httpUpload(string $url, array $files = [], array $form = [], array $query = [], $returnResponse = false)
     {
@@ -124,11 +124,11 @@ class BaseClient extends PaymentBaseClient
      * @param array  $options
      * @param bool   $returnResponse
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\InvalidSignException
      */
     protected function request(string $endpoint, array $params = [], $method = 'post', array $options = [], $returnResponse = false)
     {
@@ -162,8 +162,8 @@ class BaseClient extends PaymentBaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\EncryptException
      */
     protected function processParams(array $params)
     {
@@ -190,8 +190,8 @@ class BaseClient extends PaymentBaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\EncryptException
      */
     protected function encryptSensitiveInformation(string $string)
     {
@@ -239,7 +239,7 @@ class BaseClient extends PaymentBaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function getSign($params)
     {

@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\CustomerService;
+namespace Ptx\OfficialAccount\CustomerService;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Messages\Message;
-use EasyWeChat\Kernel\Messages\Raw as RawMessage;
-use EasyWeChat\Kernel\Messages\Text;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Messages\Message;
+use Ptx\Kernel\Messages\Raw as RawMessage;
+use Ptx\Kernel\Messages\Text;
 
 /**
  * Class MessageBuilder.
@@ -26,7 +26,7 @@ class Messenger
     /**
      * Messages to send.
      *
-     * @var \EasyWeChat\Kernel\Messages\Message;
+     * @var \Ptx\Kernel\Messages\Message;
      */
     protected $message;
 
@@ -47,14 +47,14 @@ class Messenger
     /**
      * Customer service instance.
      *
-     * @var \EasyWeChat\OfficialAccount\CustomerService\Client
+     * @var \Ptx\OfficialAccount\CustomerService\Client
      */
     protected $client;
 
     /**
      * MessageBuilder constructor.
      *
-     * @param \EasyWeChat\OfficialAccount\CustomerService\Client $client
+     * @param \Ptx\OfficialAccount\CustomerService\Client $client
      */
     public function __construct(Client $client)
     {
@@ -120,7 +120,7 @@ class Messenger
     /**
      * Send the message.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
      * @throws RuntimeException
      */

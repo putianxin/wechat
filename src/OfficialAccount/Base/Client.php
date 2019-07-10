@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Base;
+namespace Ptx\OfficialAccount\Base;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -23,7 +23,7 @@ class Client extends BaseClient
     /**
      * Clear quota.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function clearQuota()
     {
@@ -37,7 +37,7 @@ class Client extends BaseClient
     /**
      * Get wechat callback ip.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function getValidIps()
     {

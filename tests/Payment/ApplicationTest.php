@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment;
+namespace Ptx\Tests\Payment;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Payment\Application;
+use Ptx\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -25,17 +25,17 @@ class ApplicationTest extends TestCase
             'mch_id' => 'foo-merchant-id',
         ]);
 
-        $this->assertInstanceOf(\EasyWeChat\BasicService\Url\Client::class, $app->url);
-        $this->assertInstanceOf(\EasyWeChat\OfficialAccount\Auth\AccessToken::class, $app->access_token);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Coupon\Client::class, $app->coupon);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Bill\Client::class, $app->bill);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Order\Client::class, $app->order);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Refund\Client::class, $app->refund);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Reverse\Client::class, $app->reverse);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Sandbox\Client::class, $app->sandbox);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Redpack\Client::class, $app->redpack);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Transfer\Client::class, $app->transfer);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Jssdk\Client::class, $app->jssdk);
+        $this->assertInstanceOf(\Ptx\BasicService\Url\Client::class, $app->url);
+        $this->assertInstanceOf(\Ptx\OfficialAccount\Auth\AccessToken::class, $app->access_token);
+        $this->assertInstanceOf(\Ptx\Payment\Coupon\Client::class, $app->coupon);
+        $this->assertInstanceOf(\Ptx\Payment\Bill\Client::class, $app->bill);
+        $this->assertInstanceOf(\Ptx\Payment\Order\Client::class, $app->order);
+        $this->assertInstanceOf(\Ptx\Payment\Refund\Client::class, $app->refund);
+        $this->assertInstanceOf(\Ptx\Payment\Reverse\Client::class, $app->reverse);
+        $this->assertInstanceOf(\Ptx\Payment\Sandbox\Client::class, $app->sandbox);
+        $this->assertInstanceOf(\Ptx\Payment\Redpack\Client::class, $app->redpack);
+        $this->assertInstanceOf(\Ptx\Payment\Transfer\Client::class, $app->transfer);
+        $this->assertInstanceOf(\Ptx\Payment\Jssdk\Client::class, $app->jssdk);
 
         // test calling nonexistent method
         $this->expectException(\PHPUnit\Framework\Error\Warning::class);
@@ -102,7 +102,7 @@ class ApplicationTest extends TestCase
             'sandbox' => true,
             'key' => 'keyxxx',
         ]);
-        $sandbox = \Mockery::mock(\EasyWeChat\Payment\Sandbox\Client::class.'[getKey]', new ServiceContainer());
+        $sandbox = \Mockery::mock(\Ptx\Payment\Sandbox\Client::class.'[getKey]', new ServiceContainer());
         $sandbox->expects()->getKey()->andReturn('88888888888888888888888888888888');
         $app['sandbox'] = $sandbox;
 

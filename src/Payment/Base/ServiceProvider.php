@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Base;
+namespace Ptx\Payment\Base;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Messages;
+namespace Ptx\Tests\Kernel\Messages;
 
-use EasyWeChat\Kernel\Messages\News;
-use EasyWeChat\Kernel\Messages\NewsItem;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Messages\News;
+use Ptx\Kernel\Messages\NewsItem;
+use Ptx\Tests\TestCase;
 
 class NewsTest extends TestCase
 {
@@ -21,14 +21,14 @@ class NewsTest extends TestCase
     {
         $group = new News([
             new NewsItem([
-                'title' => 'EasyWeChat 4.0 发布了',
-                'description' => 'EasyWeChat 4.0 于今天发布了',
+                'title' => 'Ptx 4.0 发布了',
+                'description' => 'Ptx 4.0 于今天发布了',
                 'url' => 'http://easywechat.com/blog/4.0-released.html',
                 'image' => 'http://img01.easywechat.com/4.0.jpg',
             ]),
             new NewsItem([
-                'title' => 'EasyWeChat 4.0 入门指南',
-                'description' => 'EasyWeChat 4.0 于今天发布了，来看看新版用法',
+                'title' => 'Ptx 4.0 入门指南',
+                'description' => 'Ptx 4.0 于今天发布了，来看看新版用法',
                 'url' => 'http://easywechat.com/blog/4.0-tutorial.html',
                 'image' => 'http://img01.easywechat.com/4.0-tutorial.jpg',
             ]),
@@ -39,14 +39,14 @@ class NewsTest extends TestCase
             'news' => [
                 'articles' => [
                     [
-                        'title' => 'EasyWeChat 4.0 发布了',
-                        'description' => 'EasyWeChat 4.0 于今天发布了',
+                        'title' => 'Ptx 4.0 发布了',
+                        'description' => 'Ptx 4.0 于今天发布了',
                         'url' => 'http://easywechat.com/blog/4.0-released.html',
                         'picurl' => 'http://img01.easywechat.com/4.0.jpg',
                     ],
                     [
-                        'title' => 'EasyWeChat 4.0 入门指南',
-                        'description' => 'EasyWeChat 4.0 于今天发布了，来看看新版用法',
+                        'title' => 'Ptx 4.0 入门指南',
+                        'description' => 'Ptx 4.0 于今天发布了，来看看新版用法',
                         'url' => 'http://easywechat.com/blog/4.0-tutorial.html',
                         'picurl' => 'http://img01.easywechat.com/4.0-tutorial.jpg',
                     ],
@@ -59,14 +59,14 @@ class NewsTest extends TestCase
     {
         $group = new News([
             new NewsItem([
-                'title' => 'EasyWeChat 4.0 发布了',
-                'description' => 'EasyWeChat 4.0 于今天发布了',
+                'title' => 'Ptx 4.0 发布了',
+                'description' => 'Ptx 4.0 于今天发布了',
                 'url' => 'http://easywechat.com/blog/4.0-released.html',
                 'image' => 'http://img01.easywechat.com/4.0.jpg',
             ]),
             new NewsItem([
-                'title' => 'EasyWeChat 4.0 入门指南',
-                'description' => 'EasyWeChat 4.0 于今天发布了，来看看新版用法',
+                'title' => 'Ptx 4.0 入门指南',
+                'description' => 'Ptx 4.0 于今天发布了，来看看新版用法',
                 'url' => 'http://easywechat.com/blog/4.0-tutorial.html',
                 'image' => 'http://img01.easywechat.com/4.0-tutorial.jpg',
             ]),
@@ -76,14 +76,14 @@ class NewsTest extends TestCase
             'ArticleCount' => 2,
             'Articles' => [
                 [
-                    'Title' => 'EasyWeChat 4.0 发布了',
-                    'Description' => 'EasyWeChat 4.0 于今天发布了',
+                    'Title' => 'Ptx 4.0 发布了',
+                    'Description' => 'Ptx 4.0 于今天发布了',
                     'Url' => 'http://easywechat.com/blog/4.0-released.html',
                     'PicUrl' => 'http://img01.easywechat.com/4.0.jpg',
                 ],
                 [
-                    'Title' => 'EasyWeChat 4.0 入门指南',
-                    'Description' => 'EasyWeChat 4.0 于今天发布了，来看看新版用法',
+                    'Title' => 'Ptx 4.0 入门指南',
+                    'Description' => 'Ptx 4.0 于今天发布了，来看看新版用法',
                     'Url' => 'http://easywechat.com/blog/4.0-tutorial.html',
                     'PicUrl' => 'http://img01.easywechat.com/4.0-tutorial.jpg',
                 ],

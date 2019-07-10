@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Support;
+namespace Ptx\Kernel\Support;
 
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
-use EasyWeChat\Kernel\Contracts\Arrayable;
+use Ptx\Kernel\Contracts\Arrayable;
 use IteratorAggregate;
 use JsonSerializable;
 use Serializable;
@@ -58,7 +58,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      *
      * @param array $keys
      *
-     * @return \EasyWeChat\Kernel\Support\Collection
+     * @return \Ptx\Kernel\Support\Collection
      */
     public function only(array $keys)
     {
@@ -94,7 +94,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      *
      * @param Collection|array $items
      *
-     * @return \EasyWeChat\Kernel\Support\Collection
+     * @return \Ptx\Kernel\Support\Collection
      */
     public function merge($items)
     {

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Invoice;
+namespace Ptx\Work\Invoice;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -24,9 +24,9 @@ class Client extends BaseClient
      * @param string $cardId
      * @param string $encryptCode
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function get(string $cardId, string $encryptCode)
     {
@@ -41,9 +41,9 @@ class Client extends BaseClient
     /**
      * @param array $invoices
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function select(array $invoices)
     {
@@ -59,9 +59,9 @@ class Client extends BaseClient
      * @param string $encryptCode
      * @param string $status
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function update(string $cardId, string $encryptCode, string $status)
     {
@@ -79,9 +79,9 @@ class Client extends BaseClient
      * @param string $openid
      * @param string $status
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function batchUpdate(array $invoices, string $openid, string $status)
     {

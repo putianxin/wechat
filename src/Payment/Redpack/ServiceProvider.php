@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Redpack;
+namespace Ptx\Payment\Redpack;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

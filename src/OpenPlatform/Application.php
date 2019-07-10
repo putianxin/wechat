@@ -9,25 +9,25 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform;
+namespace Ptx\OpenPlatform;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\MiniProgram\Encryptor;
-use EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken;
-use EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Application as MiniProgram;
-use EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth\Client;
-use EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Account\Client as AccountClient;
-use EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Application as OfficialAccount;
-use EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\OAuth\ComponentDelegate;
-use EasyWeChat\OpenPlatform\Authorizer\Server\Guard;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\MiniProgram\Encryptor;
+use Ptx\OpenPlatform\Authorizer\Auth\AccessToken;
+use Ptx\OpenPlatform\Authorizer\MiniProgram\Application as MiniProgram;
+use Ptx\OpenPlatform\Authorizer\MiniProgram\Auth\Client;
+use Ptx\OpenPlatform\Authorizer\OfficialAccount\Account\Client as AccountClient;
+use Ptx\OpenPlatform\Authorizer\OfficialAccount\Application as OfficialAccount;
+use Ptx\OpenPlatform\Authorizer\OfficialAccount\OAuth\ComponentDelegate;
+use Ptx\OpenPlatform\Authorizer\Server\Guard;
 
 /**
  * Class Application.
  *
- * @property \EasyWeChat\OpenPlatform\Server\Guard        $server
- * @property \EasyWeChat\OpenPlatform\Auth\AccessToken    $access_token
- * @property \EasyWeChat\OpenPlatform\CodeTemplate\Client $code_template
- * @property \EasyWeChat\OpenPlatform\Component\Client    $component
+ * @property \Ptx\OpenPlatform\Server\Guard        $server
+ * @property \Ptx\OpenPlatform\Auth\AccessToken    $access_token
+ * @property \Ptx\OpenPlatform\CodeTemplate\Client $code_template
+ * @property \Ptx\OpenPlatform\Component\Client    $component
  *
  * @method mixed handleAuthorize(string $authCode = null)
  * @method mixed getAuthorizer(string $appId)
@@ -64,9 +64,9 @@ class Application extends ServiceContainer
      *
      * @param string                                                    $appId
      * @param string|null                                               $refreshToken
-     * @param \EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken|null $accessToken
+     * @param \Ptx\OpenPlatform\Authorizer\Auth\AccessToken|null $accessToken
      *
-     * @return \EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Application
+     * @return \Ptx\OpenPlatform\Authorizer\OfficialAccount\Application
      */
     public function officialAccount(string $appId, string $refreshToken = null, AccessToken $accessToken = null): OfficialAccount
     {
@@ -91,9 +91,9 @@ class Application extends ServiceContainer
      *
      * @param string                                                    $appId
      * @param string|null                                               $refreshToken
-     * @param \EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken|null $accessToken
+     * @param \Ptx\OpenPlatform\Authorizer\Auth\AccessToken|null $accessToken
      *
-     * @return \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Application
+     * @return \Ptx\OpenPlatform\Authorizer\MiniProgram\Application
      */
     public function miniProgram(string $appId, string $refreshToken = null, AccessToken $accessToken = null): MiniProgram
     {
@@ -180,7 +180,7 @@ class Application extends ServiceContainer
     }
 
     /**
-     * @param \EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken|null $accessToken
+     * @param \Ptx\OpenPlatform\Authorizer\Auth\AccessToken|null $accessToken
      *
      * @return array
      */

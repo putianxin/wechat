@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\DataCube;
+namespace Ptx\MiniProgram\DataCube;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

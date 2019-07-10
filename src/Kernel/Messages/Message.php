@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Ptx\Kernel\Messages;
 
-use EasyWeChat\Kernel\Contracts\MessageInterface;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Kernel\Traits\HasAttributes;
+use Ptx\Kernel\Contracts\MessageInterface;
+use Ptx\Kernel\Support\XML;
+use Ptx\Kernel\Traits\HasAttributes;
 use Mockery\Exception\BadMethodCallException;
 
 /**
@@ -181,7 +181,7 @@ abstract class Message implements MessageInterface
      *
      * @return array|mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function propertiesToArray(array $data, array $aliases = []): array
     {

@@ -9,21 +9,21 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Test\OfficialAccount\Card;
+namespace Ptx\Test\OfficialAccount\Card;
 
-use EasyWeChat\OfficialAccount\Application;
-use EasyWeChat\OfficialAccount\Card\BoardingPassClient;
-use EasyWeChat\OfficialAccount\Card\Card;
-use EasyWeChat\OfficialAccount\Card\Client;
-use EasyWeChat\OfficialAccount\Card\CodeClient;
-use EasyWeChat\OfficialAccount\Card\CoinClient;
-use EasyWeChat\OfficialAccount\Card\GeneralCardClient;
-use EasyWeChat\OfficialAccount\Card\JssdkClient;
-use EasyWeChat\OfficialAccount\Card\MeetingTicketClient;
-use EasyWeChat\OfficialAccount\Card\MemberCardClient;
-use EasyWeChat\OfficialAccount\Card\MovieTicketClient;
-use EasyWeChat\OfficialAccount\Card\SubMerchantClient;
-use EasyWeChat\Tests\TestCase;
+use Ptx\OfficialAccount\Application;
+use Ptx\OfficialAccount\Card\BoardingPassClient;
+use Ptx\OfficialAccount\Card\Card;
+use Ptx\OfficialAccount\Card\Client;
+use Ptx\OfficialAccount\Card\CodeClient;
+use Ptx\OfficialAccount\Card\CoinClient;
+use Ptx\OfficialAccount\Card\GeneralCardClient;
+use Ptx\OfficialAccount\Card\JssdkClient;
+use Ptx\OfficialAccount\Card\MeetingTicketClient;
+use Ptx\OfficialAccount\Card\MemberCardClient;
+use Ptx\OfficialAccount\Card\MovieTicketClient;
+use Ptx\OfficialAccount\Card\SubMerchantClient;
+use Ptx\Tests\TestCase;
 
 class CardTest extends TestCase
 {

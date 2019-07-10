@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\OAuth;
+namespace Ptx\OfficialAccount\OAuth;
 
 use Overtrue\Socialite\SocialiteManager as Socialite;
 use Pimple\Container;

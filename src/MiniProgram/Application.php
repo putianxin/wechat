@@ -9,33 +9,33 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram;
+namespace Ptx\MiniProgram;
 
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\ServiceContainer;
+use Ptx\BasicService;
+use Ptx\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\MiniProgram\Auth\AccessToken           $access_token
- * @property \EasyWeChat\MiniProgram\DataCube\Client            $data_cube
- * @property \EasyWeChat\MiniProgram\AppCode\Client             $app_code
- * @property \EasyWeChat\MiniProgram\Auth\Client                $auth
- * @property \EasyWeChat\OfficialAccount\Server\Guard           $server
- * @property \EasyWeChat\MiniProgram\Encryptor                  $encryptor
- * @property \EasyWeChat\MiniProgram\TemplateMessage\Client     $template_message
- * @property \EasyWeChat\OfficialAccount\CustomerService\Client $customer_service
- * @property \EasyWeChat\MiniProgram\Plugin\Client              $plugin
- * @property \EasyWeChat\MiniProgram\UniformMessage\Client      $uniform_message
- * @property \EasyWeChat\MiniProgram\ActivityMessage\Client     $activity_message
- * @property \EasyWeChat\MiniProgram\Express\Client             $logistics
- * @property \EasyWeChat\MiniProgram\NearbyPoi\Client           $nearby_poi
- * @property \EasyWeChat\MiniProgram\OCR\Client                 $ocr
- * @property \EasyWeChat\MiniProgram\Soter\Client               $soter
- * @property \EasyWeChat\BasicService\Media\Client              $media
- * @property \EasyWeChat\BasicService\ContentSecurity\Client    $content_security
+ * @property \Ptx\MiniProgram\Auth\AccessToken           $access_token
+ * @property \Ptx\MiniProgram\DataCube\Client            $data_cube
+ * @property \Ptx\MiniProgram\AppCode\Client             $app_code
+ * @property \Ptx\MiniProgram\Auth\Client                $auth
+ * @property \Ptx\OfficialAccount\Server\Guard           $server
+ * @property \Ptx\MiniProgram\Encryptor                  $encryptor
+ * @property \Ptx\MiniProgram\TemplateMessage\Client     $template_message
+ * @property \Ptx\OfficialAccount\CustomerService\Client $customer_service
+ * @property \Ptx\MiniProgram\Plugin\Client              $plugin
+ * @property \Ptx\MiniProgram\UniformMessage\Client      $uniform_message
+ * @property \Ptx\MiniProgram\ActivityMessage\Client     $activity_message
+ * @property \Ptx\MiniProgram\Express\Client             $logistics
+ * @property \Ptx\MiniProgram\NearbyPoi\Client           $nearby_poi
+ * @property \Ptx\MiniProgram\OCR\Client                 $ocr
+ * @property \Ptx\MiniProgram\Soter\Client               $soter
+ * @property \Ptx\BasicService\Media\Client              $media
+ * @property \Ptx\BasicService\ContentSecurity\Client    $content_security
  */
 class Application extends ServiceContainer
 {

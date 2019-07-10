@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\Auth;
+namespace Ptx\OpenPlatform\Authorizer\Auth;
 
-use EasyWeChat\Kernel\AccessToken as BaseAccessToken;
-use EasyWeChat\OpenPlatform\Application;
+use Ptx\Kernel\AccessToken as BaseAccessToken;
+use Ptx\OpenPlatform\Application;
 use Pimple\Container;
 
 /**
@@ -38,7 +38,7 @@ class AccessToken extends BaseAccessToken
     protected $tokenKey = 'authorizer_access_token';
 
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Ptx\OpenPlatform\Application
      */
     protected $component;
 
@@ -46,7 +46,7 @@ class AccessToken extends BaseAccessToken
      * AuthorizerAccessToken constructor.
      *
      * @param \Pimple\Container                    $app
-     * @param \EasyWeChat\OpenPlatform\Application $component
+     * @param \Ptx\OpenPlatform\Application $component
      */
     public function __construct(Container $app, Application $component)
     {

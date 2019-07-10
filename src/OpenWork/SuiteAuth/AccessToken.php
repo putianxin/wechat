@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\SuiteAuth;
+namespace Ptx\OpenWork\SuiteAuth;
 
-use  EasyWeChat\Kernel\AccessToken as BaseAccessToken;
+use  Ptx\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * AccessToken.

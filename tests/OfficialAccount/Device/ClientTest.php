@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Device;
+namespace Ptx\Tests\OfficialAccount\Device;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OfficialAccount\Device\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OfficialAccount\Device\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

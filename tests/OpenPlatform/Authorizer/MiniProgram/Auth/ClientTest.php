@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Authorizer\MiniProgram\Auth;
+namespace Ptx\Tests\OpenPlatform\Authorizer\MiniProgram\Auth;
 
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Auth\AccessToken;
-use EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\OpenPlatform\Application;
+use Ptx\OpenPlatform\Auth\AccessToken;
+use Ptx\OpenPlatform\Authorizer\MiniProgram\Auth\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\CustomerService;
+namespace Ptx\OfficialAccount\CustomerService;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -81,7 +81,7 @@ class Client extends BaseClient
      *
      * @param string $account
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function delete(string $account)
     {
@@ -122,11 +122,11 @@ class Client extends BaseClient
     /**
      * Get message builder.
      *
-     * @param \EasyWeChat\Kernel\Messages\Message|string $message
+     * @param \Ptx\Kernel\Messages\Message|string $message
      *
-     * @return \EasyWeChat\OfficialAccount\CustomerService\Messenger
+     * @return \Ptx\OfficialAccount\CustomerService\Messenger
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function message($message)
     {

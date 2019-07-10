@@ -9,30 +9,30 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment;
+namespace Ptx\Payment;
 
 use Closure;
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\OfficialAccount;
+use Ptx\BasicService;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Kernel\Support;
+use Ptx\OfficialAccount;
 
 /**
  * Class Application.
  *
- * @property \EasyWeChat\Payment\Bill\Client              $bill
- * @property \EasyWeChat\Payment\Jssdk\Client             $jssdk
- * @property \EasyWeChat\Payment\Order\Client             $order
- * @property \EasyWeChat\Payment\Refund\Client            $refund
- * @property \EasyWeChat\Payment\Coupon\Client            $coupon
- * @property \EasyWeChat\Payment\Reverse\Client           $reverse
- * @property \EasyWeChat\Payment\Redpack\Client           $redpack
- * @property \EasyWeChat\BasicService\Url\Client          $url
- * @property \EasyWeChat\Payment\Transfer\Client          $transfer
- * @property \EasyWeChat\Payment\Security\Client          $security
- * @property \EasyWeChat\Payment\ProfitSharing\Client     $profit_sharing
- * @property \EasyWeChat\OfficialAccount\Auth\AccessToken $access_token
+ * @property \Ptx\Payment\Bill\Client              $bill
+ * @property \Ptx\Payment\Jssdk\Client             $jssdk
+ * @property \Ptx\Payment\Order\Client             $order
+ * @property \Ptx\Payment\Refund\Client            $refund
+ * @property \Ptx\Payment\Coupon\Client            $coupon
+ * @property \Ptx\Payment\Reverse\Client           $reverse
+ * @property \Ptx\Payment\Redpack\Client           $redpack
+ * @property \Ptx\BasicService\Url\Client          $url
+ * @property \Ptx\Payment\Transfer\Client          $transfer
+ * @property \Ptx\Payment\Security\Client          $security
+ * @property \Ptx\Payment\ProfitSharing\Client     $profit_sharing
+ * @property \Ptx\OfficialAccount\Auth\AccessToken $access_token
  *
  * @method mixed pay(array $attributes)
  * @method mixed authCodeToOpenid(string $authCode)
@@ -108,7 +108,7 @@ class Application extends ServiceContainer
      *
      * @codeCoverageIgnore
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Ptx\Kernel\Exceptions\Exception
      */
     public function handlePaidNotify(Closure $closure)
     {
@@ -122,7 +122,7 @@ class Application extends ServiceContainer
      *
      * @codeCoverageIgnore
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Ptx\Kernel\Exceptions\Exception
      */
     public function handleRefundedNotify(Closure $closure)
     {
@@ -136,7 +136,7 @@ class Application extends ServiceContainer
      *
      * @codeCoverageIgnore
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Ptx\Kernel\Exceptions\Exception
      */
     public function handleScannedNotify(Closure $closure)
     {
@@ -172,7 +172,7 @@ class Application extends ServiceContainer
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function getKey(string $endpoint = null)
     {

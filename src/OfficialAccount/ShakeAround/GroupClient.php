@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Ptx\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class GroupClient.
@@ -25,7 +25,7 @@ class GroupClient extends BaseClient
      *
      * @param string $name
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function create(string $name)
     {
@@ -42,7 +42,7 @@ class GroupClient extends BaseClient
      * @param int    $groupId
      * @param string $name
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function update(int $groupId, string $name)
     {
@@ -59,7 +59,7 @@ class GroupClient extends BaseClient
      *
      * @param int $groupId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function delete(int $groupId)
     {
@@ -76,7 +76,7 @@ class GroupClient extends BaseClient
      * @param int $begin
      * @param int $count
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function list(int $begin, int $count)
     {
@@ -95,7 +95,7 @@ class GroupClient extends BaseClient
      * @param int $begin
      * @param int $count
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function get(int $groupId, int $begin, int $count)
     {
@@ -114,7 +114,7 @@ class GroupClient extends BaseClient
      * @param int   $groupId
      * @param array $deviceIdentifiers
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function addDevices(int $groupId, array $deviceIdentifiers)
     {
@@ -132,7 +132,7 @@ class GroupClient extends BaseClient
      * @param int   $groupId
      * @param array $deviceIdentifiers
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function removeDevices(int $groupId, array $deviceIdentifiers)
     {

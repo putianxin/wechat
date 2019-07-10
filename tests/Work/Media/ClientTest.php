@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Media;
+namespace Ptx\Tests\Work\Media;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Media\Client;
+use Ptx\Kernel\Http\Response;
+use Ptx\Kernel\Http\StreamResponse;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Tests\TestCase;
+use Ptx\Work\Media\Client;
 
 class ClientTest extends TestCase
 {

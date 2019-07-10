@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Jssdk;
+namespace Ptx\Tests\Payment\Jssdk;
 
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Jssdk\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Payment\Application;
+use Ptx\Payment\Jssdk\Client;
+use Ptx\Tests\TestCase;
 use Overtrue\Socialite\AccessToken;
 
 class ClientTest extends TestCase

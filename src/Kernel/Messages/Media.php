@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Ptx\Kernel\Messages;
 
-use EasyWeChat\Kernel\Contracts\MediaInterface;
-use EasyWeChat\Kernel\Support\Str;
+use Ptx\Kernel\Contracts\MediaInterface;
+use Ptx\Kernel\Support\Str;
 
 /**
  * Class Media.

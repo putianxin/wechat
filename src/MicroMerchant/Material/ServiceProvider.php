@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Material;
+namespace Ptx\MicroMerchant\Material;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

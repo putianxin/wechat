@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Support;
+namespace Ptx\Kernel\Support;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Exceptions\RuntimeException;
 
 /**
  * Class Str.

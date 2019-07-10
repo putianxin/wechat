@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\BasicService\Media;
+namespace Ptx\Tests\BasicService\Media;
 
-use EasyWeChat\BasicService\Media\Client;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
+use Ptx\BasicService\Media\Client;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\Http\Response;
+use Ptx\Kernel\Http\StreamResponse;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

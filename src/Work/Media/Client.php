@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Media;
+namespace Ptx\Work\Media;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Http\StreamResponse;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Http\StreamResponse;
 
 /**
  * Class Client.

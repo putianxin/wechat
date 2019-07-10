@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\DataCube;
+namespace Ptx\MiniProgram\DataCube;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -26,7 +26,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function summaryTrend(string $from, string $to)
     {
@@ -39,7 +39,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function dailyVisitTrend(string $from, string $to)
     {
@@ -52,7 +52,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function weeklyVisitTrend(string $from, string $to)
     {
@@ -65,7 +65,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function monthlyVisitTrend(string $from, string $to)
     {
@@ -78,7 +78,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function visitDistribution(string $from, string $to)
     {
@@ -91,7 +91,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function dailyRetainInfo(string $from, string $to)
     {
@@ -104,7 +104,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function weeklyRetainInfo(string $from, string $to)
     {
@@ -117,7 +117,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function monthlyRetainInfo(string $from, string $to)
     {
@@ -130,7 +130,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function visitPage(string $from, string $to)
     {
@@ -143,7 +143,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function userPortrait(string $from, string $to)
     {
@@ -157,7 +157,7 @@ class Client extends BaseClient
      * @param string $from
      * @param string $to
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     protected function query(string $api, string $from, string $to)
     {

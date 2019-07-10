@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server\Handlers;
+namespace Ptx\OpenPlatform\Server\Handlers;
 
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
+use Ptx\Kernel\Contracts\EventHandlerInterface;
 
 /**
  * Class UpdateAuthorized.

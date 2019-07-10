@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Store;
+namespace Ptx\OfficialAccount\Store;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -23,7 +23,7 @@ class Client extends BaseClient
     /**
      * Get WXA supported categories.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function categories()
     {
@@ -33,7 +33,7 @@ class Client extends BaseClient
     /**
      * Get district from tencent map .
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function districts()
     {
@@ -46,7 +46,7 @@ class Client extends BaseClient
      * @param int    $districtId
      * @param string $keyword
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function searchFromMap(int $districtId, string $keyword)
     {
@@ -61,7 +61,7 @@ class Client extends BaseClient
     /**
      * Get store check status.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function getStatus()
     {
@@ -73,7 +73,7 @@ class Client extends BaseClient
      *
      * @param array $baseInfo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function createMerchant(array $baseInfo)
     {
@@ -85,7 +85,7 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function updateMerchant(array $params)
     {
@@ -97,7 +97,7 @@ class Client extends BaseClient
      *
      * @param array $baseInfo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function createFromMap(array $baseInfo)
     {
@@ -109,7 +109,7 @@ class Client extends BaseClient
      *
      * @param array $baseInfo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function create(array $baseInfo)
     {
@@ -122,7 +122,7 @@ class Client extends BaseClient
      * @param int   $poiId
      * @param array $baseInfo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function update(int $poiId, array $baseInfo)
     {
@@ -136,7 +136,7 @@ class Client extends BaseClient
      *
      * @param int $poiId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function get(int $poiId)
     {
@@ -149,7 +149,7 @@ class Client extends BaseClient
      * @param int $offset
      * @param int $limit
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function list(int $offset = 0, int $limit = 10)
     {
@@ -166,7 +166,7 @@ class Client extends BaseClient
      *
      * @param int $poiId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function delete(int $poiId)
     {

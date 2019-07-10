@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Message;
+namespace Ptx\Work\Message;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Messages\Message;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Messages\Message;
 
 /**
  * Class Client.
@@ -22,11 +22,11 @@ use EasyWeChat\Kernel\Messages\Message;
 class Client extends BaseClient
 {
     /**
-     * @param string|\EasyWeChat\Kernel\Messages\Message $message
+     * @param string|\Ptx\Kernel\Messages\Message $message
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Ptx\Work\Message\Messenger
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function message($message)
     {
@@ -36,7 +36,7 @@ class Client extends BaseClient
     /**
      * @param array $message
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function send(array $message)
     {

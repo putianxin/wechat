@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\UniformMessage;
+namespace Ptx\Tests\MiniProgram\UniformMessage;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\MiniProgram\UniformMessage\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\MiniProgram\UniformMessage\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

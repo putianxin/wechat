@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\ProfitSharing;
+namespace Ptx\Payment\ProfitSharing;
 
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Ptx\Payment\Kernel\BaseClient;
 
 /**
  * Class Client.

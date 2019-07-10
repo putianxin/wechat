@@ -9,19 +9,19 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork;
+namespace Ptx\OpenWork;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\Work\Application as Work;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenWork\Work\Application as Work;
 
 /**
  * Application.
  *
  * @author xiaomin <keacefull@gmail.com>
  *
- * @property \EasyWeChat\OpenWork\Server\Guard    $server
- * @property \EasyWeChat\OpenWork\Corp\Client     $corp
- * @property \EasyWeChat\OpenWork\Provider\Client $provider
+ * @property \Ptx\OpenWork\Server\Guard    $server
+ * @property \Ptx\OpenWork\Corp\Client     $corp
+ * @property \Ptx\OpenWork\Provider\Client $provider
  */
 class Application extends ServiceContainer
 {

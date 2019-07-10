@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Reverse;
+namespace Ptx\Payment\Reverse;
 
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Ptx\Payment\Kernel\BaseClient;
 
 class Client extends BaseClient
 {
@@ -20,9 +20,9 @@ class Client extends BaseClient
      *
      * @param string $outTradeNumber
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function byOutTradeNumber(string $outTradeNumber)
     {
@@ -34,9 +34,9 @@ class Client extends BaseClient
      *
      * @param string $transactionId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function byTransactionId(string $transactionId)
     {
@@ -49,9 +49,9 @@ class Client extends BaseClient
      * @param string $number
      * @param string $type
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     protected function reverse(string $number, string $type)
     {

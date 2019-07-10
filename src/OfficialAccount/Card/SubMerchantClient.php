@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Support\Arr;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Support\Arr;
 
 /**
  * Class SubMerchantClient.

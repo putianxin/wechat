@@ -9,20 +9,20 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Ptx\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class Card.
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\OfficialAccount\ShakeAround\DeviceClient   $device
- * @property \EasyWeChat\OfficialAccount\ShakeAround\GroupClient    $group
- * @property \EasyWeChat\OfficialAccount\ShakeAround\MaterialClient $material
- * @property \EasyWeChat\OfficialAccount\ShakeAround\RelationClient $relation
- * @property \EasyWeChat\OfficialAccount\ShakeAround\StatsClient    $stats
+ * @property \Ptx\OfficialAccount\ShakeAround\DeviceClient   $device
+ * @property \Ptx\OfficialAccount\ShakeAround\GroupClient    $group
+ * @property \Ptx\OfficialAccount\ShakeAround\MaterialClient $material
+ * @property \Ptx\OfficialAccount\ShakeAround\RelationClient $relation
+ * @property \Ptx\OfficialAccount\ShakeAround\StatsClient    $stats
  */
 class ShakeAround extends Client
 {
@@ -31,7 +31,7 @@ class ShakeAround extends Client
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function __get($property)
     {

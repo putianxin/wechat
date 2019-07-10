@@ -9,19 +9,19 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Support;
+namespace Ptx\Tests\Kernel\Support;
 
-use EasyWeChat\Kernel\Support\Arr;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Support\Arr;
+use Ptx\Kernel\Support\Collection;
+use Ptx\Tests\TestCase;
 use stdClass;
 
 class ArrTest extends TestCase
 {
     public function testAdd()
     {
-        $array = Arr::add(['name' => 'EasyWeChat'], 'price', 100);
-        $this->assertSame(['name' => 'EasyWeChat', 'price' => 100], $array);
+        $array = Arr::add(['name' => 'Ptx'], 'price', 100);
+        $this->assertSame(['name' => 'Ptx', 'price' => 100], $array);
     }
 
     public function testCrossJoin()
@@ -65,9 +65,9 @@ class ArrTest extends TestCase
 
     public function testDivide()
     {
-        list($keys, $values) = Arr::divide(['name' => 'EasyWeChat']);
+        list($keys, $values) = Arr::divide(['name' => 'Ptx']);
         $this->assertSame(['name'], $keys);
-        $this->assertSame(['EasyWeChat'], $values);
+        $this->assertSame(['Ptx'], $values);
     }
 
     public function testDot()
@@ -84,9 +84,9 @@ class ArrTest extends TestCase
 
     public function testExcept()
     {
-        $array = ['name' => 'EasyWeChat', 'price' => 100];
+        $array = ['name' => 'Ptx', 'price' => 100];
         $array = Arr::except($array, ['price']);
-        $this->assertSame(['name' => 'EasyWeChat'], $array);
+        $this->assertSame(['name' => 'Ptx'], $array);
     }
 
     public function testExists()
@@ -228,9 +228,9 @@ class ArrTest extends TestCase
 
     public function testOnly()
     {
-        $array = ['name' => 'EasyWeChat', 'price' => 100, 'orders' => 10];
+        $array = ['name' => 'Ptx', 'price' => 100, 'orders' => 10];
         $array = Arr::only($array, ['name', 'price']);
-        $this->assertSame(['name' => 'EasyWeChat', 'price' => 100], $array);
+        $this->assertSame(['name' => 'Ptx', 'price' => 100], $array);
     }
 
     public function testPrepend()
@@ -243,9 +243,9 @@ class ArrTest extends TestCase
 
     public function testPull()
     {
-        $array = ['name' => 'EasyWeChat', 'price' => 100];
+        $array = ['name' => 'Ptx', 'price' => 100];
         $name = Arr::pull($array, 'name');
-        $this->assertSame('EasyWeChat', $name);
+        $this->assertSame('Ptx', $name);
         $this->assertSame(['price' => 100], $array);
         // Only works on first level keys
         $array = ['i@example.com' => 'Joe', 'jack@localhost' => 'Jane'];

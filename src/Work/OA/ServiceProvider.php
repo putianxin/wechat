@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\OA;
+namespace Ptx\Work\OA;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

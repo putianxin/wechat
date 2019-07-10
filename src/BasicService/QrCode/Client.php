@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\BasicService\QrCode;
+namespace Ptx\BasicService\QrCode;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -38,7 +38,7 @@ class Client extends BaseClient
      *
      * @param string|int $sceneValue
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function forever($sceneValue)
     {
@@ -60,7 +60,7 @@ class Client extends BaseClient
      * @param string|int $sceneValue
      * @param int|null   $expireSeconds
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function temporary($sceneValue, $expireSeconds = null)
     {
@@ -97,7 +97,7 @@ class Client extends BaseClient
      * @param bool   $temporary
      * @param int    $expireSeconds
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     protected function create($actionName, $actionInfo, $temporary = true, $expireSeconds = null)
     {

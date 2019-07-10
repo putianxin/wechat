@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work;
+namespace Ptx\Tests\Work;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Application;
-use EasyWeChat\Work\Base\Client;
+use Ptx\Tests\TestCase;
+use Ptx\Work\Application;
+use Ptx\Work\Base\Client;
 
 class ApplicationTest extends TestCase
 {
@@ -25,22 +25,22 @@ class ApplicationTest extends TestCase
             'secret' => 'secret',
         ]);
 
-        $this->assertInstanceOf(\EasyWeChat\Work\OA\Client::class, $app->oa);
-        $this->assertInstanceOf(\EasyWeChat\Work\Auth\AccessToken::class, $app->access_token);
-        $this->assertInstanceOf(\EasyWeChat\Work\Agent\Client::class, $app->agent);
-        $this->assertInstanceOf(\EasyWeChat\Work\Chat\Client::class, $app->chat);
-        $this->assertInstanceOf(\EasyWeChat\Work\Department\Client::class, $app->department);
-        $this->assertInstanceOf(\EasyWeChat\Work\Media\Client::class, $app->media);
-        $this->assertInstanceOf(\EasyWeChat\Work\Menu\Client::class, $app->menu);
-        $this->assertInstanceOf(\EasyWeChat\Work\Message\Client::class, $app->message);
-        $this->assertInstanceOf(\EasyWeChat\Work\Message\Messenger::class, $app->messenger);
-        $this->assertInstanceOf(\EasyWeChat\Work\Server\Guard::class, $app->server);
-        $this->assertInstanceOf(\EasyWeChat\BasicService\Jssdk\Client::class, $app->jssdk);
+        $this->assertInstanceOf(\Ptx\Work\OA\Client::class, $app->oa);
+        $this->assertInstanceOf(\Ptx\Work\Auth\AccessToken::class, $app->access_token);
+        $this->assertInstanceOf(\Ptx\Work\Agent\Client::class, $app->agent);
+        $this->assertInstanceOf(\Ptx\Work\Chat\Client::class, $app->chat);
+        $this->assertInstanceOf(\Ptx\Work\Department\Client::class, $app->department);
+        $this->assertInstanceOf(\Ptx\Work\Media\Client::class, $app->media);
+        $this->assertInstanceOf(\Ptx\Work\Menu\Client::class, $app->menu);
+        $this->assertInstanceOf(\Ptx\Work\Message\Client::class, $app->message);
+        $this->assertInstanceOf(\Ptx\Work\Message\Messenger::class, $app->messenger);
+        $this->assertInstanceOf(\Ptx\Work\Server\Guard::class, $app->server);
+        $this->assertInstanceOf(\Ptx\BasicService\Jssdk\Client::class, $app->jssdk);
         $this->assertInstanceOf(\Overtrue\Socialite\Providers\WeWorkProvider::class, $app->oauth);
-        $this->assertInstanceOf(\EasyWeChat\Work\ExternalContact\Client::class, $app->external_contact);
-        $this->assertInstanceOf(\EasyWeChat\Work\ExternalContact\ContactWayClient::class, $app->contact_way);
-        $this->assertInstanceOf(\EasyWeChat\Work\ExternalContact\StatisticsClient::class, $app->external_contact_statistics);
-        $this->assertInstanceOf(\EasyWeChat\Work\ExternalContact\MessageClient::class, $app->external_contact_message);
+        $this->assertInstanceOf(\Ptx\Work\ExternalContact\Client::class, $app->external_contact);
+        $this->assertInstanceOf(\Ptx\Work\ExternalContact\ContactWayClient::class, $app->contact_way);
+        $this->assertInstanceOf(\Ptx\Work\ExternalContact\StatisticsClient::class, $app->external_contact_statistics);
+        $this->assertInstanceOf(\Ptx\Work\ExternalContact\MessageClient::class, $app->external_contact_message);
     }
 
     public function testMiniProgram()
@@ -59,9 +59,9 @@ class ApplicationTest extends TestCase
         ]);
 
         $miniProgram = $app->miniProgram();
-        $this->assertInstanceOf(\EasyWeChat\Work\MiniProgram\Application::class, $miniProgram);
-        $this->assertInstanceOf(\EasyWeChat\Work\Auth\AccessToken::class, $miniProgram['access_token']);
-        $this->assertInstanceOf(\EasyWeChat\Work\MiniProgram\Auth\Client::class, $miniProgram['auth']);
+        $this->assertInstanceOf(\Ptx\Work\MiniProgram\Application::class, $miniProgram);
+        $this->assertInstanceOf(\Ptx\Work\Auth\AccessToken::class, $miniProgram['access_token']);
+        $this->assertInstanceOf(\Ptx\Work\MiniProgram\Auth\Client::class, $miniProgram['auth']);
         $this->assertArraySubset([
             'response_type' => 'array',
             'log' => [

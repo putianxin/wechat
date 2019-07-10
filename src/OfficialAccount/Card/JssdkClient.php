@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
-use EasyWeChat\BasicService\Jssdk\Client as Jssdk;
-use EasyWeChat\Kernel\Support\Arr;
-use function EasyWeChat\Kernel\Support\str_random;
+use Ptx\BasicService\Jssdk\Client as Jssdk;
+use Ptx\Kernel\Support\Arr;
+use function Ptx\Kernel\Support\str_random;
 
 /**
  * Class Jssdk.
@@ -28,9 +28,9 @@ class JssdkClient extends Jssdk
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function getTicket(bool $refresh = false, string $type = 'wx_card'): array
     {
@@ -59,7 +59,7 @@ class JssdkClient extends Jssdk
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function attachExtension($cardId, array $extension = [])

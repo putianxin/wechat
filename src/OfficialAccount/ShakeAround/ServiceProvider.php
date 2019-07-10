@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Ptx\OfficialAccount\ShakeAround;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

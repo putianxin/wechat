@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\OCR;
+namespace Ptx\MiniProgram\OCR;
 
-use EasyWeChat\OfficialAccount\OCR\Client;
+use Ptx\OfficialAccount\OCR\Client;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

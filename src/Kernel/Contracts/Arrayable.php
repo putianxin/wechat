@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Contracts;
+namespace Ptx\Kernel\Contracts;
 
 use ArrayAccess;
 

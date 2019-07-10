@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
 /**
  * Class MemberCardClient.
@@ -98,7 +98,7 @@ class MemberCardClient extends Client
      *
      * @return string 开卡组件链接
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getActivateUrl(array $params = [])
     {

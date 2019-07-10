@@ -9,21 +9,21 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram;
+namespace Ptx\OpenPlatform\Authorizer\MiniProgram;
 
-use EasyWeChat\MiniProgram\Application as MiniProgram;
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
+use Ptx\MiniProgram\Application as MiniProgram;
+use Ptx\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client $account
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Code\Client    $code
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Domain\Client  $domain
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Setting\Client $setting
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Tester\Client  $tester
+ * @property \Ptx\OpenPlatform\Authorizer\MiniProgram\Account\Client $account
+ * @property \Ptx\OpenPlatform\Authorizer\MiniProgram\Code\Client    $code
+ * @property \Ptx\OpenPlatform\Authorizer\MiniProgram\Domain\Client  $domain
+ * @property \Ptx\OpenPlatform\Authorizer\MiniProgram\Setting\Client $setting
+ * @property \Ptx\OpenPlatform\Authorizer\MiniProgram\Tester\Client  $tester
  */
 class Application extends MiniProgram
 {

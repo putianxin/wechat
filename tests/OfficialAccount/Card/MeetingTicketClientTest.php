@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Card;
+namespace Ptx\Tests\OfficialAccount\Card;
 
-use EasyWeChat\OfficialAccount\Card\MeetingTicketClient;
-use EasyWeChat\Tests\TestCase;
+use Ptx\OfficialAccount\Card\MeetingTicketClient;
+use Ptx\Tests\TestCase;
 
 class MeetingTicketClientTest extends TestCase
 {

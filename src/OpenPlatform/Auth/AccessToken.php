@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Auth;
+namespace Ptx\OpenPlatform\Auth;
 
-use EasyWeChat\Kernel\AccessToken as BaseAccessToken;
+use Ptx\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * Class AccessToken.

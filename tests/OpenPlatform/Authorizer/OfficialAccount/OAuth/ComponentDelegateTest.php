@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Authorizer\OfficialAccount\OAuth;
+namespace Ptx\Tests\OpenPlatform\Authorizer\OfficialAccount\OAuth;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\OAuth\ComponentDelegate;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenPlatform\Application;
+use Ptx\OpenPlatform\Authorizer\OfficialAccount\OAuth\ComponentDelegate;
+use Ptx\Tests\TestCase;
 
 class ComponentDelegateTest extends TestCase
 {
@@ -29,7 +29,7 @@ class ComponentDelegateTest extends TestCase
     public function testGetToken()
     {
         $app = new Application();
-        $app['access_token'] = \Mockery::mock(\EasyWeChat\OpenPlatform\Auth\AccessToken::class.'[getToken]', [\Mockery::mock(ServiceContainer::class)], function ($mock) {
+        $app['access_token'] = \Mockery::mock(\Ptx\OpenPlatform\Auth\AccessToken::class.'[getToken]', [\Mockery::mock(ServiceContainer::class)], function ($mock) {
             $mock->expects()->getToken()->andReturn(['component_access_token' => 'mock-token']);
         });
         $delegate = new ComponentDelegate($app);

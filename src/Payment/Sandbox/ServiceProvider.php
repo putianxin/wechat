@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Sandbox;
+namespace Ptx\Payment\Sandbox;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

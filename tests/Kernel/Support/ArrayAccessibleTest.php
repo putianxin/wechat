@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Support;
+namespace Ptx\Tests\Kernel\Support;
 
-use EasyWeChat\Kernel\Contracts\Arrayable;
-use EasyWeChat\Kernel\Support\ArrayAccessible;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Contracts\Arrayable;
+use Ptx\Kernel\Support\ArrayAccessible;
+use Ptx\Tests\TestCase;
 
 class ArrayAccessibleTest extends TestCase
 {

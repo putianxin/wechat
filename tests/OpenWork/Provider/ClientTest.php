@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenWork\Provider;
+namespace Ptx\Tests\OpenWork\Provider;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\Auth\AccessToken;
-use EasyWeChat\OpenWork\Provider\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenWork\Auth\AccessToken;
+use Ptx\OpenWork\Provider\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

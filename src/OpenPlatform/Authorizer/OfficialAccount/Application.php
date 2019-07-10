@@ -9,18 +9,18 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\OfficialAccount;
+namespace Ptx\OpenPlatform\Authorizer\OfficialAccount;
 
-use EasyWeChat\OfficialAccount\Application as OfficialAccount;
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
+use Ptx\OfficialAccount\Application as OfficialAccount;
+use Ptx\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Account\Client     $account
- * @property \EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\MiniProgram\Client $mini_program
+ * @property \Ptx\OpenPlatform\Authorizer\OfficialAccount\Account\Client     $account
+ * @property \Ptx\OpenPlatform\Authorizer\OfficialAccount\MiniProgram\Client $mini_program
  */
 class Application extends OfficialAccount
 {

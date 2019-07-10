@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel;
+namespace Ptx\Tests\Kernel;
 
-use function EasyWeChat\Kernel\data_get;
-use function EasyWeChat\Kernel\data_to_array;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\ArrayAccessible;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Tests\TestCase;
+use function Ptx\Kernel\data_get;
+use function Ptx\Kernel\data_to_array;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Support\ArrayAccessible;
+use Ptx\Kernel\Support\Collection;
+use Ptx\Tests\TestCase;
 
 class HelpersTest extends TestCase
 {

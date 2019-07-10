@@ -9,18 +9,18 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\MiniProgram;
+namespace Ptx\Work\MiniProgram;
 
-use EasyWeChat\MiniProgram\Application as MiniProgram;
-use EasyWeChat\Work\Auth\AccessToken;
-use EasyWeChat\Work\MiniProgram\Auth\Client;
+use Ptx\MiniProgram\Application as MiniProgram;
+use Ptx\Work\Auth\AccessToken;
+use Ptx\Work\MiniProgram\Auth\Client;
 
 /**
  * Class Application.
  *
  * @author Caikeal <caikeal@qq.com>
  *
- * @property \EasyWeChat\Work\MiniProgram\Auth\Client $auth
+ * @property \Ptx\Work\MiniProgram\Auth\Client $auth
  */
 class Application extends MiniProgram
 {

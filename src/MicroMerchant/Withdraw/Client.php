@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Withdraw;
+namespace Ptx\MicroMerchant\Withdraw;
 
-use EasyWeChat\MicroMerchant\Kernel\BaseClient;
+use Ptx\MicroMerchant\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -27,10 +27,10 @@ class Client extends BaseClient
      * @param        $date
      * @param string $subMchId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function queryWithdrawalStatus($date, $subMchId = '')
     {
@@ -48,10 +48,10 @@ class Client extends BaseClient
      * @param        $date
      * @param string $subMchId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function requestWithdraw($date, $subMchId = '')
     {

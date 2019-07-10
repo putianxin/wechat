@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenWork\Work\Auth;
+namespace Ptx\Tests\OpenWork\Work\Auth;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\Application;
-use EasyWeChat\OpenWork\Work\Auth\AccessToken;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenWork\Application;
+use Ptx\OpenWork\Work\Auth\AccessToken;
+use Ptx\Tests\TestCase;
 
 class AccessTokenTest extends TestCase
 {
@@ -38,7 +38,7 @@ class AccessTokenTest extends TestCase
 
         $openWork = new Application();
 
-        $openWork['suite_access_token'] = \Mockery::mock(\EasyWeChat\OpenWork\SuiteAuth\AccessToken::class, function ($mock) {
+        $openWork['suite_access_token'] = \Mockery::mock(\Ptx\OpenWork\SuiteAuth\AccessToken::class, function ($mock) {
             $mock->shouldReceive('getToken')->andReturn([
                 'suite_access_token' => 'mock-suit-access-token',
             ]);

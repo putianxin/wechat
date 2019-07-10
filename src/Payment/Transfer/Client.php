@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Transfer;
+namespace Ptx\Payment\Transfer;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use function EasyWeChat\Kernel\Support\get_server_ip;
-use function EasyWeChat\Kernel\Support\rsa_public_encrypt;
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use function Ptx\Kernel\Support\get_server_ip;
+use function Ptx\Kernel\Support\rsa_public_encrypt;
+use Ptx\Payment\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -28,9 +28,9 @@ class Client extends BaseClient
      *
      * @param string $partnerTradeNo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function queryBalanceOrder(string $partnerTradeNo)
     {
@@ -48,9 +48,9 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function toBalance(array $params)
     {
@@ -72,9 +72,9 @@ class Client extends BaseClient
      *
      * @param string $partnerTradeNo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function queryBankCardOrder(string $partnerTradeNo)
     {
@@ -91,10 +91,10 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function toBankCard(array $params)
     {

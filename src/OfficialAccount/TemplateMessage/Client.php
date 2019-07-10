@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\TemplateMessage;
+namespace Ptx\OfficialAccount\TemplateMessage;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
 use ReflectionClass;
 
 /**
@@ -50,7 +50,7 @@ class Client extends BaseClient
      * @param int $industryOne
      * @param int $industryTwo
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function setIndustry($industryOne, $industryTwo)
     {
@@ -65,7 +65,7 @@ class Client extends BaseClient
     /**
      * Get industry.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function getIndustry()
     {
@@ -77,7 +77,7 @@ class Client extends BaseClient
      *
      * @param string $shortId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function addTemplate($shortId)
     {
@@ -89,7 +89,7 @@ class Client extends BaseClient
     /**
      * Get private templates.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function getPrivateTemplates()
     {
@@ -101,7 +101,7 @@ class Client extends BaseClient
      *
      * @param string $templateId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function deletePrivateTemplate($templateId)
     {
@@ -115,9 +115,9 @@ class Client extends BaseClient
      *
      * @param $data
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function send($data = [])
     {
@@ -133,9 +133,9 @@ class Client extends BaseClient
      *
      * @param array $data
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function sendSubscription(array $data = [])
     {
@@ -151,7 +151,7 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function formatMessage(array $data = [])
     {

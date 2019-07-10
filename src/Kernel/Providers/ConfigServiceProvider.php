@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Providers;
+namespace Ptx\Kernel\Providers;
 
-use EasyWeChat\Kernel\Config;
+use Ptx\Kernel\Config;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

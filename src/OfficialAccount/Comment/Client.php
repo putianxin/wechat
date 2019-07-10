@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Comment;
+namespace Ptx\OfficialAccount\Comment;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -26,7 +26,7 @@ class Client extends BaseClient
      * @param string   $msgId
      * @param int|null $index
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function open(string $msgId, int $index = null)
     {
@@ -44,7 +44,7 @@ class Client extends BaseClient
      * @param string   $msgId
      * @param int|null $index
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function close(string $msgId, int $index = null)
     {
@@ -65,7 +65,7 @@ class Client extends BaseClient
      * @param int    $count
      * @param int    $type
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function list(string $msgId, int $index, int $begin, int $count, int $type = 0)
     {
@@ -87,7 +87,7 @@ class Client extends BaseClient
      * @param int    $index
      * @param int    $commentId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function markElect(string $msgId, int $index, int $commentId)
     {
@@ -107,7 +107,7 @@ class Client extends BaseClient
      * @param int    $index
      * @param int    $commentId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function unmarkElect(string $msgId, int $index, int $commentId)
     {
@@ -127,7 +127,7 @@ class Client extends BaseClient
      * @param int    $index
      * @param int    $commentId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function delete(string $msgId, int $index, int $commentId)
     {
@@ -148,7 +148,7 @@ class Client extends BaseClient
      * @param int    $commentId
      * @param string $content
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function reply(string $msgId, int $index, int $commentId, string $content)
     {
@@ -169,7 +169,7 @@ class Client extends BaseClient
      * @param int    $index
      * @param int    $commentId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function deleteReply(string $msgId, int $index, int $commentId)
     {

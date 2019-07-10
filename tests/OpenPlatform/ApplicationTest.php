@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform;
+namespace Ptx\Tests\OpenPlatform;
 
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken as AuthorizerAccessToken;
-use EasyWeChat\Tests\TestCase;
+use Ptx\OpenPlatform\Application;
+use Ptx\OpenPlatform\Authorizer\Auth\AccessToken as AuthorizerAccessToken;
+use Ptx\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -21,11 +21,11 @@ class ApplicationTest extends TestCase
     {
         $app = new Application(['app_id' => 'app-id']);
 
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Auth\AccessToken::class, $app->access_token);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Auth\VerifyTicket::class, $app->verify_ticket);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Server\Guard::class, $app->server);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\CodeTemplate\Client::class, $app->code_template);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Component\Client::class, $app->component);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\Auth\AccessToken::class, $app->access_token);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\Auth\VerifyTicket::class, $app->verify_ticket);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\Server\Guard::class, $app->server);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\CodeTemplate\Client::class, $app->code_template);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\Component\Client::class, $app->component);
     }
 
     public function testGetPreAuthorizationUrl()
@@ -81,10 +81,10 @@ class ApplicationTest extends TestCase
         ]);
         $officialAccount = $app->officialAccount('app-id', 'refresh-token');
 
-        $this->assertInstanceOf('EasyWeChat\OfficialAccount\Application', $officialAccount);
+        $this->assertInstanceOf('Ptx\OfficialAccount\Application', $officialAccount);
         $this->assertInstanceOf(AuthorizerAccessToken::class, $officialAccount['access_token']);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Authorizer\Server\Guard::class, $officialAccount['server']);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Account\Client::class, $officialAccount['account']);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\Authorizer\Server\Guard::class, $officialAccount['server']);
+        $this->assertInstanceOf(\Ptx\OpenPlatform\Authorizer\OfficialAccount\Account\Client::class, $officialAccount['account']);
 
         $this->assertArraySubset([
             'debug' => true,
@@ -112,9 +112,9 @@ class ApplicationTest extends TestCase
         $app = new Application(['app_id' => 'component-app-id', 'secret' => 'component-secret', 'token' => 'component-token', 'aes_key' => 'Qqx2S6jV3mp5prWPg5x3eBmeU1kLayZio4Q9ZxWTbmf']);
         $miniProgram = $app->miniProgram('app-id', 'refresh-token');
 
-        $this->assertInstanceOf('EasyWeChat\MiniProgram\Application', $miniProgram);
-        $this->assertInstanceOf('\EasyWeChat\MiniProgram\Encryptor', $miniProgram->encryptor);
-        $this->assertInstanceOf('\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth\Client', $miniProgram->auth);
+        $this->assertInstanceOf('Ptx\MiniProgram\Application', $miniProgram);
+        $this->assertInstanceOf('\Ptx\MiniProgram\Encryptor', $miniProgram->encryptor);
+        $this->assertInstanceOf('\Ptx\OpenPlatform\Authorizer\MiniProgram\Auth\Client', $miniProgram->auth);
     }
 
     public function testDynamicCalls()

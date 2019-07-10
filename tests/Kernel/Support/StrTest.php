@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Support;
+namespace Ptx\Tests\Kernel\Support;
 
-use EasyWeChat\Kernel\Support\Str;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Support\Str;
+use Ptx\Tests\TestCase;
 
 class StrTest extends TestCase
 {

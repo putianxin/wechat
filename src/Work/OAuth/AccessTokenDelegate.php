@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\OAuth;
+namespace Ptx\Work\OAuth;
 
-use EasyWeChat\Work\Application;
+use Ptx\Work\Application;
 use Overtrue\Socialite\AccessTokenInterface;
 
 /**
@@ -22,12 +22,12 @@ use Overtrue\Socialite\AccessTokenInterface;
 class AccessTokenDelegate implements AccessTokenInterface
 {
     /**
-     * @var \EasyWeChat\Work\Application
+     * @var \Ptx\Work\Application
      */
     protected $app;
 
     /**
-     * @param \EasyWeChat\Work\Application $app
+     * @param \Ptx\Work\Application $app
      */
     public function __construct(Application $app)
     {

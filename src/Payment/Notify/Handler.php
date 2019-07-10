@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Notify;
+namespace Ptx\Payment\Notify;
 
 use Closure;
-use EasyWeChat\Kernel\Exceptions\Exception;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Payment\Kernel\Exceptions\InvalidSignException;
+use Ptx\Kernel\Exceptions\Exception;
+use Ptx\Kernel\Support;
+use Ptx\Kernel\Support\XML;
+use Ptx\Payment\Kernel\Exceptions\InvalidSignException;
 use Symfony\Component\HttpFoundation\Response;
 
 abstract class Handler
@@ -24,7 +24,7 @@ abstract class Handler
     const FAIL = 'FAIL';
 
     /**
-     * @var \EasyWeChat\Payment\Application
+     * @var \Ptx\Payment\Application
      */
     protected $app;
 
@@ -59,7 +59,7 @@ abstract class Handler
     protected $sign = false;
 
     /**
-     * @param \EasyWeChat\Payment\Application $app
+     * @param \Ptx\Payment\Application $app
      */
     public function __construct($app)
     {
@@ -123,7 +123,7 @@ abstract class Handler
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Ptx\Kernel\Exceptions\Exception
      */
     public function getMessage(): array
     {
@@ -155,7 +155,7 @@ abstract class Handler
      *
      * @return string|null
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Ptx\Kernel\Exceptions\Exception
      */
     public function decryptMessage(string $key)
     {
@@ -174,8 +174,8 @@ abstract class Handler
      *
      * @param array $message
      *
-     * @throws \EasyWeChat\Payment\Kernel\Exceptions\InvalidSignException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Payment\Kernel\Exceptions\InvalidSignException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function validate(array $message)
     {

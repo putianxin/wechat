@@ -9,23 +9,23 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant;
+namespace Ptx\MicroMerchant;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Kernel\Support;
+use Ptx\MicroMerchant\Kernel\Exceptions\InvalidSignException;
 
 /**
  * Class Application.
  *
  * @author liuml <liumenglei0211@gmail.com>
  *
- * @property \EasyWeChat\MicroMerchant\Certficates\Client    $certficates
- * @property \EasyWeChat\MicroMerchant\Material\Client       $material
- * @property \EasyWeChat\MicroMerchant\MerchantConfig\Client $merchantConfig
- * @property \EasyWeChat\MicroMerchant\Withdraw\Client       $withdraw
- * @property \EasyWeChat\MicroMerchant\Media\Client          $media
+ * @property \Ptx\MicroMerchant\Certficates\Client    $certficates
+ * @property \Ptx\MicroMerchant\Material\Client       $material
+ * @property \Ptx\MicroMerchant\MerchantConfig\Client $merchantConfig
+ * @property \Ptx\MicroMerchant\Withdraw\Client       $withdraw
+ * @property \Ptx\MicroMerchant\Media\Client          $media
  *
  * @method mixed submitApplication(array $params)
  * @method mixed getStatus(string $applymentId, string $businessCode = '')
@@ -76,7 +76,7 @@ class Application extends ServiceContainer
     /**
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function getKey()
     {
@@ -134,8 +134,8 @@ class Application extends ServiceContainer
      *
      * @return bool
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\MicroMerchant\Kernel\Exceptions\InvalidSignException
      */
     public function verifySignature(array $data)
     {

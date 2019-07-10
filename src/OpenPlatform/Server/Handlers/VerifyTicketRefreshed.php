@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server\Handlers;
+namespace Ptx\OpenPlatform\Server\Handlers;
 
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use EasyWeChat\OpenPlatform\Application;
+use Ptx\Kernel\Contracts\EventHandlerInterface;
+use Ptx\OpenPlatform\Application;
 
 /**
  * Class VerifyTicketRefreshed.
@@ -22,14 +22,14 @@ use EasyWeChat\OpenPlatform\Application;
 class VerifyTicketRefreshed implements EventHandlerInterface
 {
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Ptx\OpenPlatform\Application
      */
     protected $app;
 
     /**
      * Constructor.
      *
-     * @param \EasyWeChat\OpenPlatform\Application $app
+     * @param \Ptx\OpenPlatform\Application $app
      */
     public function __construct(Application $app)
     {

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
 /**
  * Class MeetingTicketClient.
@@ -21,7 +21,7 @@ class MeetingTicketClient extends Client
     /**
      * @param array $params
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function updateUser(array $params)
     {

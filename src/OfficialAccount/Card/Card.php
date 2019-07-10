@@ -9,24 +9,24 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class Card.
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\OfficialAccount\Card\CodeClient          $code
- * @property \EasyWeChat\OfficialAccount\Card\MeetingTicketClient $meeting_ticket
- * @property \EasyWeChat\OfficialAccount\Card\MemberCardClient    $member_card
- * @property \EasyWeChat\OfficialAccount\Card\GeneralCardClient   $general_card
- * @property \EasyWeChat\OfficialAccount\Card\MovieTicketClient   $movie_ticket
- * @property \EasyWeChat\OfficialAccount\Card\CoinClient          $coin
- * @property \EasyWeChat\OfficialAccount\Card\SubMerchantClient   $sub_merchant
- * @property \EasyWeChat\OfficialAccount\Card\BoardingPassClient  $boarding_pass
- * @property \EasyWeChat\OfficialAccount\Card\JssdkClient         $jssdk
+ * @property \Ptx\OfficialAccount\Card\CodeClient          $code
+ * @property \Ptx\OfficialAccount\Card\MeetingTicketClient $meeting_ticket
+ * @property \Ptx\OfficialAccount\Card\MemberCardClient    $member_card
+ * @property \Ptx\OfficialAccount\Card\GeneralCardClient   $general_card
+ * @property \Ptx\OfficialAccount\Card\MovieTicketClient   $movie_ticket
+ * @property \Ptx\OfficialAccount\Card\CoinClient          $coin
+ * @property \Ptx\OfficialAccount\Card\SubMerchantClient   $sub_merchant
+ * @property \Ptx\OfficialAccount\Card\BoardingPassClient  $boarding_pass
+ * @property \Ptx\OfficialAccount\Card\JssdkClient         $jssdk
  */
 class Card extends Client
 {
@@ -35,7 +35,7 @@ class Card extends Client
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     public function __get($property)
     {

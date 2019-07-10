@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Ptx\Kernel;
 
-use EasyWeChat\Kernel\Support\Collection;
+use Ptx\Kernel\Support\Collection;
 
 /**
  * Class Config.

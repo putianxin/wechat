@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Base;
+namespace Ptx\Tests\OpenPlatform\Base;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Base\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenPlatform\Base\Client;
+use Ptx\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class ClientTest extends TestCase
@@ -117,7 +117,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @uses \EasyWeChat\OpenPlatform\Base\Client::clearQuota()
+     * @uses \Ptx\OpenPlatform\Base\Client::clearQuota()
      */
     public function testClearQuota()
     {

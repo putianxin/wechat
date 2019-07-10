@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Jssdk;
+namespace Ptx\Payment\Jssdk;
 
-use EasyWeChat\BasicService\Jssdk\Client as JssdkClient;
-use EasyWeChat\Kernel\Support;
+use Ptx\BasicService\Jssdk\Client as JssdkClient;
+use Ptx\Kernel\Support;
 use Overtrue\Socialite\AccessTokenInterface;
 
 /**

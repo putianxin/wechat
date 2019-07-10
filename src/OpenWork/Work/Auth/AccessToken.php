@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Work\Auth;
+namespace Ptx\OpenWork\Work\Auth;
 
-use EasyWeChat\Kernel\AccessToken as BaseAccessToken;
-use EasyWeChat\OpenWork\Application;
+use Ptx\Kernel\AccessToken as BaseAccessToken;
+use Ptx\OpenWork\Application;
 use Pimple\Container;
 
 /**

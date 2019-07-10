@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Messages;
+namespace Ptx\Tests\Kernel\Messages;
 
-use EasyWeChat\Kernel\Messages\Music;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Messages\Music;
+use Ptx\Tests\TestCase;
 
 class MusicTest extends TestCase
 {

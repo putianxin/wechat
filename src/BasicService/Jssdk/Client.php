@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\BasicService\Jssdk;
+namespace Ptx\BasicService\Jssdk;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Support;
+use Ptx\Kernel\Traits\InteractsWithCache;
 
 /**
  * Class Client.
@@ -47,9 +47,9 @@ class Client extends BaseClient
      *
      * @return array|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function buildConfig(array $jsApiList, bool $debug = false, bool $beta = false, bool $json = true)
     {
@@ -67,9 +67,9 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function getConfigArray(array $apis, bool $debug = false, bool $beta = false)
     {
@@ -84,9 +84,9 @@ class Client extends BaseClient
      *
      * @return array|null
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function getTicket(bool $refresh = false, string $type = 'jsapi'): array
     {
@@ -119,9 +119,9 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     protected function configSignature(string $url = null, string $nonce = null, $timestamp = null): array
     {

@@ -9,8 +9,8 @@
  * with this source code in the file LICENSE.
  */
 
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Http\StreamResponse;
+use Ptx\Tests\TestCase;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
 use org\bovigo\vfs\vfsStreamWrapper;
@@ -57,7 +57,7 @@ class StreamResponseTest extends TestCase
         $this->assertStringEndsWith('.png', $filename);
 
         // not writable
-        $this->expectException(\EasyWeChat\Kernel\Exceptions\InvalidArgumentException::class);
+        $this->expectException(\Ptx\Kernel\Exceptions\InvalidArgumentException::class);
         $this->expectExceptionMessage("'vfs://usr' is not writable.");
         vfsStream::setup('usr', 0444);
         $response->save(vfsStream::url('usr'));
@@ -67,7 +67,7 @@ class StreamResponseTest extends TestCase
     {
         // empty contents
         $directory = vfsStream::url('testing');
-        $this->expectException(\EasyWeChat\Kernel\Exceptions\RuntimeException::class);
+        $this->expectException(\Ptx\Kernel\Exceptions\RuntimeException::class);
         $this->expectExceptionMessage('Invalid media response content.');
         $response = new StreamResponse(200, [], file_get_contents(STUBS_ROOT.'/files/empty.file'));
         $response->save($directory);

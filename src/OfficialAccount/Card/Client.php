@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Traits\InteractsWithCache;
 
 /**
  * Class Client.
@@ -317,7 +317,7 @@ class Client extends BaseClient
      * @param string $cardId
      * @param int    $amount
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function increaseStock($cardId, $amount)
     {
@@ -330,7 +330,7 @@ class Client extends BaseClient
      * @param string $cardId
      * @param int    $amount
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function reduceStock($cardId, $amount)
     {

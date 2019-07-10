@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel;
+namespace Ptx\Tests\Kernel;
 
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Encryptor;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Support\XML;
+use Ptx\Tests\TestCase;
 
 class EncryptorTest extends TestCase
 {

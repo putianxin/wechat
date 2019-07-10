@@ -9,25 +9,25 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Messages;
+namespace Ptx\Tests\Kernel\Messages;
 
-use EasyWeChat\Kernel\Messages\NewsItem;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Messages\NewsItem;
+use Ptx\Tests\TestCase;
 
 class NewsItemTest extends TestCase
 {
     public function testToXmlArray()
     {
         $message = new NewsItem([
-                'title' => 'EasyWeChat 4.0 发布了',
-                'description' => 'EasyWeChat 4.0 于今天发布了',
+                'title' => 'Ptx 4.0 发布了',
+                'description' => 'Ptx 4.0 于今天发布了',
                 'url' => 'http://easywechat.com/blog/4.0-released.html',
                 'image' => 'http://img01.easywechat.com/4.0.jpg',
             ]);
 
         $this->assertSame([
-            'Title' => 'EasyWeChat 4.0 发布了',
-            'Description' => 'EasyWeChat 4.0 于今天发布了',
+            'Title' => 'Ptx 4.0 发布了',
+            'Description' => 'Ptx 4.0 于今天发布了',
             'Url' => 'http://easywechat.com/blog/4.0-released.html',
             'PicUrl' => 'http://img01.easywechat.com/4.0.jpg',
         ], $message->toXmlArray());

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Ptx\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class RelationClient.
@@ -26,7 +26,7 @@ class RelationClient extends BaseClient
      * @param array $deviceIdentifier
      * @param array $pageIds
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function bindPages(array $deviceIdentifier, array $pageIds)
     {
@@ -43,7 +43,7 @@ class RelationClient extends BaseClient
      *
      * @param array $deviceIdentifier
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection
+     * @return array|\Ptx\Kernel\Support\Collection
      */
     public function listByDeviceId(array $deviceIdentifier)
     {
@@ -62,7 +62,7 @@ class RelationClient extends BaseClient
      * @param int $begin
      * @param int $count
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function listByPageId(int $pageId, int $begin, int $count)
     {

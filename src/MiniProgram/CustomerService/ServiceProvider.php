@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\CustomerService;
+namespace Ptx\MiniProgram\CustomerService;
 
-use EasyWeChat\OfficialAccount\CustomerService\Client;
+use Ptx\OfficialAccount\CustomerService\Client;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

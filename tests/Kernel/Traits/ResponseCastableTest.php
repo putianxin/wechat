@@ -9,16 +9,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Ptx\Tests\Kernel\Traits;
 
-use EasyWeChat\Kernel\Contracts\Arrayable;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Support\ArrayAccessible;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Kernel\Traits\ResponseCastable;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Contracts\Arrayable;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\Exceptions\InvalidConfigException;
+use Ptx\Kernel\Http\Response;
+use Ptx\Kernel\Support\ArrayAccessible;
+use Ptx\Kernel\Support\Collection;
+use Ptx\Kernel\Traits\ResponseCastable;
+use Ptx\Tests\TestCase;
 
 class ResponseCastableTest extends TestCase
 {

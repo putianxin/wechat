@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Ptx\Tests\Kernel\Traits;
 
-use EasyWeChat\Kernel\Traits\HasAttributes;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Traits\HasAttributes;
+use Ptx\Tests\TestCase;
 
 class HasAttributesTest extends TestCase
 {

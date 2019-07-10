@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Ptx\Kernel;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\AES;
-use function EasyWeChat\Kernel\Support\str_random;
-use EasyWeChat\Kernel\Support\XML;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Support\AES;
+use function Ptx\Kernel\Support\str_random;
+use Ptx\Kernel\Support\XML;
 use Throwable;
 
 /**
@@ -96,7 +96,7 @@ class Encryptor
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function encrypt($xml, $nonce = null, $timestamp = null): string
     {
@@ -139,7 +139,7 @@ class Encryptor
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function decrypt($content, $msgSignature, $nonce, $timestamp): string
     {
@@ -189,7 +189,7 @@ class Encryptor
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function pkcs7Pad(string $text, int $blockSize): string
     {

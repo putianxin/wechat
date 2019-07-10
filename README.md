@@ -1,6 +1,6 @@
-<img align="right" width="100" src="https://user-images.githubusercontent.com/1472352/49656357-1e874080-fa78-11e8-80ea-69e2103345cf.png" alt="EasyWeChat Logo"/>
+<img align="right" width="100" src="https://user-images.githubusercontent.com/1472352/49656357-1e874080-fa78-11e8-80ea-69e2103345cf.png" alt="Ptx Logo"/>
 
-<h1 align="left"><a href="https://www.easywechat.com">EasyWeChat</a></h1>
+<h1 align="left"><a href="https://www.easywechat.com">Ptx</a></h1>
 
 📦 It is probably the best SDK in the world for developing Wechat App.
 
@@ -34,7 +34,7 @@ $ composer require "overtrue/wechat:~4.1" -vvv
 ```php
 <?php
 
-use EasyWeChat\Factory;
+use Ptx\Factory;
 
 $options = [
     'app_id'    => 'wx3cf0f39249eb0exxx',

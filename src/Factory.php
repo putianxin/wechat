@@ -9,19 +9,19 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat;
+namespace Ptx;
 
 /**
  * Class Factory.
  *
- * @method static \EasyWeChat\Payment\Application            payment(array $config)
- * @method static \EasyWeChat\MiniProgram\Application        miniProgram(array $config)
- * @method static \EasyWeChat\OpenPlatform\Application       openPlatform(array $config)
- * @method static \EasyWeChat\OfficialAccount\Application    officialAccount(array $config)
- * @method static \EasyWeChat\BasicService\Application       basicService(array $config)
- * @method static \EasyWeChat\Work\Application               work(array $config)
- * @method static \EasyWeChat\OpenWork\Application           openWork(array $config)
- * @method static \EasyWeChat\MicroMerchant\Application      microMerchant(array $config)
+ * @method static \Ptx\Payment\Application            payment(array $config)
+ * @method static \Ptx\MiniProgram\Application        miniProgram(array $config)
+ * @method static \Ptx\OpenPlatform\Application       openPlatform(array $config)
+ * @method static \Ptx\OfficialAccount\Application    officialAccount(array $config)
+ * @method static \Ptx\BasicService\Application       basicService(array $config)
+ * @method static \Ptx\Work\Application               work(array $config)
+ * @method static \Ptx\OpenWork\Application           openWork(array $config)
+ * @method static \Ptx\MicroMerchant\Application      microMerchant(array $config)
  */
 class Factory
 {
@@ -29,12 +29,12 @@ class Factory
      * @param string $name
      * @param array  $config
      *
-     * @return \EasyWeChat\Kernel\ServiceContainer
+     * @return \Ptx\Kernel\ServiceContainer
      */
     public static function make($name, array $config)
     {
         $namespace = Kernel\Support\Str::studly($name);
-        $application = "\\EasyWeChat\\{$namespace}\\Application";
+        $application = "\\Ptx\\{$namespace}\\Application";
 
         return new $application($config);
     }

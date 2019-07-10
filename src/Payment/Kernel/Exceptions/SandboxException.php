@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Kernel\Exceptions;
+namespace Ptx\Payment\Kernel\Exceptions;
 
-use EasyWeChat\Kernel\Exceptions\Exception;
+use Ptx\Kernel\Exceptions\Exception;
 
 class SandboxException extends Exception
 {

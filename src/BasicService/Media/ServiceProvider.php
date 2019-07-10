@@ -20,7 +20,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\BasicService\Media;
+namespace Ptx\BasicService\Media;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

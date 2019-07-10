@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\NearbyPoi;
+namespace Ptx\Tests\MiniProgram\NearbyPoi;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\MiniProgram\NearbyPoi\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\MiniProgram\NearbyPoi\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

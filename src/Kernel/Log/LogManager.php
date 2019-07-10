@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Log;
+namespace Ptx\Kernel\Log;
 
-use EasyWeChat\Kernel\ServiceContainer;
+use Ptx\Kernel\ServiceContainer;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\ErrorLogHandler;
 use Monolog\Handler\HandlerInterface;
@@ -30,7 +30,7 @@ use Psr\Log\LoggerInterface;
 class LogManager implements LoggerInterface
 {
     /**
-     * @var \EasyWeChat\Kernel\ServiceContainer
+     * @var \Ptx\Kernel\ServiceContainer
      */
     protected $app;
 
@@ -67,7 +67,7 @@ class LogManager implements LoggerInterface
     /**
      * LogManager constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Ptx\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -170,7 +170,7 @@ class LogManager implements LoggerInterface
      */
     protected function createEmergencyLogger()
     {
-        return new Monolog('EasyWeChat', $this->prepareHandlers([new StreamHandler(
+        return new Monolog('Ptx', $this->prepareHandlers([new StreamHandler(
             \sys_get_temp_dir().'/easywechat/easywechat.log', $this->level(['level' => 'debug'])
         )]));
     }
@@ -250,7 +250,7 @@ class LogManager implements LoggerInterface
             $this->prepareHandler(new SlackWebhookHandler(
                 $config['url'],
                 $config['channel'] ?? null,
-                $config['username'] ?? 'EasyWeChat',
+                $config['username'] ?? 'Ptx',
                 $config['attachment'] ?? true,
                 $config['emoji'] ?? ':boom:',
                 $config['short'] ?? false,
@@ -271,7 +271,7 @@ class LogManager implements LoggerInterface
     {
         return new Monolog($this->parseChannel($config), [
             $this->prepareHandler(new SyslogHandler(
-                    'EasyWeChat', $config['facility'] ?? LOG_USER, $this->level($config))
+                    'Ptx', $config['facility'] ?? LOG_USER, $this->level($config))
             ),
         ]);
     }

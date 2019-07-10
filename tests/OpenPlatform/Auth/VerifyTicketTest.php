@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Auth;
+namespace Ptx\Tests\OpenPlatform\Auth;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Auth\VerifyTicket;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\OpenPlatform\Application;
+use Ptx\OpenPlatform\Auth\VerifyTicket;
+use Ptx\Tests\TestCase;
 use Psr\SimpleCache\CacheInterface;
 
 class VerifyTicketTest extends TestCase
@@ -68,7 +68,7 @@ class VerifyTicketTest extends TestCase
             $mock->allows()->getCache()->andReturn($cache);
         });
 
-        $this->expectException('EasyWeChat\Kernel\Exceptions\RuntimeException');
+        $this->expectException('Ptx\Kernel\Exceptions\RuntimeException');
         $this->expectExceptionMessage('Credential "component_verify_ticket" does not exist in cache.');
         $client->getTicket();
     }

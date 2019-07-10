@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Messages;
+namespace Ptx\Tests\Kernel\Messages;
 
-use EasyWeChat\Kernel\Contracts\MediaInterface;
-use EasyWeChat\Kernel\Messages\Media;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Contracts\MediaInterface;
+use Ptx\Kernel\Messages\Media;
+use Ptx\Tests\TestCase;
 
 class MediaTest extends TestCase
 {

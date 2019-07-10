@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Traits;
+namespace Ptx\Kernel\Traits;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Support\Arr;
-use EasyWeChat\Kernel\Support\Str;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\Support\Arr;
+use Ptx\Kernel\Support\Str;
 
 /**
  * Trait Attributes.
@@ -236,7 +236,7 @@ trait HasAttributes
     /**
      * Check required attributes.
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function checkRequiredAttributes()
     {

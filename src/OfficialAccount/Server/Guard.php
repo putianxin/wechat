@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Server;
+namespace Ptx\OfficialAccount\Server;
 
-use EasyWeChat\Kernel\ServerGuard;
+use Ptx\Kernel\ServerGuard;
 
 /**
  * Class Guard.

@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Broadcasting;
+namespace Ptx\Tests\OfficialAccount\Broadcasting;
 
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\OfficialAccount\Broadcasting\Client;
-use EasyWeChat\OfficialAccount\Broadcasting\MessageBuilder;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Messages\Text;
+use Ptx\OfficialAccount\Broadcasting\Client;
+use Ptx\OfficialAccount\Broadcasting\MessageBuilder;
+use Ptx\Tests\TestCase;
 
 class MessageBuilderTest extends TestCase
 {

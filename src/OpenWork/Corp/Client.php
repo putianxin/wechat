@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Corp;
+namespace Ptx\OpenWork\Corp;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\ServiceContainer;
 
 /**
  * Client.
@@ -25,7 +25,7 @@ class Client extends BaseClient
      * Client constructor.
      * 三方接口有三个access_token，这里用的是suite_access_token.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Ptx\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -41,7 +41,7 @@ class Client extends BaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getPreAuthorizationUrl(string $preAuthCode = '', string $redirectUri = '', string $state = '')
     {
@@ -64,7 +64,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getPreAuthCode()
     {
@@ -80,7 +80,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function setSession(string $preAuthCode, array $sessionInfo)
     {
@@ -99,7 +99,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getPermanentByCode(string $authCode)
     {
@@ -118,7 +118,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getAuthorization(string $authCorpId, string $permanentCode)
     {
@@ -138,7 +138,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getManagers(string $authCorpId, string $agentId)
     {
@@ -181,7 +181,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getUserByCode(string $code)
     {
@@ -197,9 +197,9 @@ class Client extends BaseClient
      *
      * @param string $userTicket
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getUserByTicket(string $userTicket)
     {

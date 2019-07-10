@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server;
+namespace Ptx\OpenPlatform\Server;
 
-use EasyWeChat\Kernel\ServerGuard;
-use EasyWeChat\OpenPlatform\Server\Handlers\Authorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\Unauthorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\UpdateAuthorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
+use Ptx\Kernel\ServerGuard;
+use Ptx\OpenPlatform\Server\Handlers\Authorized;
+use Ptx\OpenPlatform\Server\Handlers\Unauthorized;
+use Ptx\OpenPlatform\Server\Handlers\UpdateAuthorized;
+use Ptx\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
 use Symfony\Component\HttpFoundation\Response;
 
 /**

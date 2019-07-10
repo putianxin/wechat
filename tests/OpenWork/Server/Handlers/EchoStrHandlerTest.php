@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenWork\Server\Handlers;
+namespace Ptx\Tests\OpenWork\Server\Handlers;
 
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\OpenWork\Application;
-use EasyWeChat\OpenWork\Server\Handlers\EchoStrHandler;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Decorators\FinallyResult;
+use Ptx\Kernel\Encryptor;
+use Ptx\OpenWork\Application;
+use Ptx\OpenWork\Server\Handlers\EchoStrHandler;
+use Ptx\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class EchoStrHandlerTest extends TestCase

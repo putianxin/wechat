@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\Auth;
+namespace Ptx\Tests\MiniProgram\Auth;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\MiniProgram\Auth\AccessToken;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\MiniProgram\Auth\AccessToken;
+use Ptx\Tests\TestCase;
 
 class AccessTokenTest extends TestCase
 {

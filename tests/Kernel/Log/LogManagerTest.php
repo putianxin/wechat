@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Log;
+namespace Ptx\Tests\Kernel\Log;
 
-use EasyWeChat\Kernel\Config;
-use EasyWeChat\Kernel\Log\LogManager;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Config;
+use Ptx\Kernel\Log\LogManager;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Tests\TestCase;
 use Monolog\Handler\ErrorLogHandler;
 use Monolog\Logger;
 

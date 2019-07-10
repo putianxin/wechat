@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Setting;
+namespace Ptx\OpenPlatform\Authorizer\MiniProgram\Setting;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -126,7 +126,7 @@ class Client extends BaseClient
     /**
      * 查询小程序是否可被搜索.
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function getSearchStatus()
     {
@@ -136,7 +136,7 @@ class Client extends BaseClient
     /**
      * 设置小程序可被搜素.
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function setSearchable()
     {
@@ -148,7 +148,7 @@ class Client extends BaseClient
     /**
      * 设置小程序不可被搜素.
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function setUnsearchable()
     {
@@ -160,7 +160,7 @@ class Client extends BaseClient
     /**
      * 获取展示的公众号信息.
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function getDisplayedOfficialAccount()
     {
@@ -172,7 +172,7 @@ class Client extends BaseClient
      *
      * @param string|bool $appid
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function setDisplayedOfficialAccount($appid)
     {
@@ -188,7 +188,7 @@ class Client extends BaseClient
      * @param int $page
      * @param int $num
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function getDisplayableOfficialAccounts(int $page, int $num)
     {

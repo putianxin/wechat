@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Security;
+namespace Ptx\Payment\Security;
 
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Ptx\Payment\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -23,7 +23,7 @@ class Client extends BaseClient
     /**
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
      */
     public function getPublicKey()
     {

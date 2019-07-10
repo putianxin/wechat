@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Semantic;
+namespace Ptx\Tests\OfficialAccount\Semantic;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OfficialAccount\Semantic\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OfficialAccount\Semantic\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

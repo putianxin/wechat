@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Auth;
+namespace Ptx\OpenPlatform\Auth;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
-use EasyWeChat\OpenPlatform\Application;
+use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Traits\InteractsWithCache;
+use Ptx\OpenPlatform\Application;
 
 /**
  * Class VerifyTicket.
@@ -25,14 +25,14 @@ class VerifyTicket
     use InteractsWithCache;
 
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Ptx\OpenPlatform\Application
      */
     protected $app;
 
     /**
      * Constructor.
      *
-     * @param \EasyWeChat\OpenPlatform\Application $app
+     * @param \Ptx\OpenPlatform\Application $app
      */
     public function __construct(Application $app)
     {
@@ -47,7 +47,7 @@ class VerifyTicket
      * @return $this
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      */
     public function setTicket(string $ticket)
     {
@@ -65,7 +65,7 @@ class VerifyTicket
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Ptx\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function getTicket(): string

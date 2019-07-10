@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Notify;
+namespace Ptx\Payment\Notify;
 
 use Closure;
 
@@ -35,7 +35,7 @@ class Scanned extends Handler
      *
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Ptx\Kernel\Exceptions\Exception
      */
     public function handle(Closure $closure)
     {

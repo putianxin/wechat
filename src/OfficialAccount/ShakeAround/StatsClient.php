@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Ptx\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class StatsClient.
@@ -27,7 +27,7 @@ class StatsClient extends BaseClient
      * @param int   $beginTime        (Unix timestamp)
      * @param int   $endTime          (Unix timestamp)
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function deviceSummary(array $deviceIdentifier, int $beginTime, int $endTime)
     {
@@ -46,7 +46,7 @@ class StatsClient extends BaseClient
      * @param int $timestamp
      * @param int $pageIndex
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function devicesSummary(int $timestamp, int $pageIndex)
     {
@@ -65,7 +65,7 @@ class StatsClient extends BaseClient
      * @param int $beginTime (Unix timestamp)
      * @param int $endTime   (Unix timestamp)
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function pageSummary(int $pageId, int $beginTime, int $endTime)
     {
@@ -84,7 +84,7 @@ class StatsClient extends BaseClient
      * @param int $timestamp
      * @param int $pageIndex
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function pagesSummary(int $timestamp, int $pageIndex)
     {

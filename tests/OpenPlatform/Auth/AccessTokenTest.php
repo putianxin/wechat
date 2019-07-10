@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Auth;
+namespace Ptx\Tests\OpenPlatform\Auth;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Auth\AccessToken;
-use EasyWeChat\OpenPlatform\Auth\VerifyTicket;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\OpenPlatform\Auth\AccessToken;
+use Ptx\OpenPlatform\Auth\VerifyTicket;
+use Ptx\Tests\TestCase;
 
 class AccessTokenTest extends TestCase
 {

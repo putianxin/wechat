@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Decorators;
+namespace Ptx\Tests\Kernel\Decorators;
 
-use EasyWeChat\Kernel\Decorators\TerminateResult;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Decorators\TerminateResult;
+use Ptx\Tests\TestCase;
 
 class TerminateResultTest extends TestCase
 {

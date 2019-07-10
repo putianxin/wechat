@@ -11,7 +11,7 @@ delete_branch()
 
     mkdir -p $TEMPDIR
 
-    git clone git@github.com:EasyWeChat/$1.git
+    git clone git@github.com:Ptx/$1.git
 
     pushd $TEMPDIR
 

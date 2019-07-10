@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Http;
+namespace Ptx\Kernel\Http;
 
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Kernel\Support\XML;
+use Ptx\Kernel\Support\Collection;
+use Ptx\Kernel\Support\XML;
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
 use Psr\Http\Message\ResponseInterface;
 
@@ -38,7 +38,7 @@ class Response extends GuzzleResponse
     /**
      * @param \Psr\Http\Message\ResponseInterface $response
      *
-     * @return \EasyWeChat\Kernel\Http\Response
+     * @return \Ptx\Kernel\Http\Response
      */
     public static function buildFromPsrResponse(ResponseInterface $response)
     {
@@ -86,7 +86,7 @@ class Response extends GuzzleResponse
     /**
      * Get collection data.
      *
-     * @return \EasyWeChat\Kernel\Support\Collection
+     * @return \Ptx\Kernel\Support\Collection
      */
     public function toCollection()
     {

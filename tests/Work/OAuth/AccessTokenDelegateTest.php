@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\OAuth;
+namespace Ptx\Tests\Work\OAuth;
 
-use EasyWeChat\Kernel\AccessToken;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Application;
-use EasyWeChat\Work\OAuth\AccessTokenDelegate;
+use Ptx\Kernel\AccessToken;
+use Ptx\Tests\TestCase;
+use Ptx\Work\Application;
+use Ptx\Work\OAuth\AccessTokenDelegate;
 
 class AccessTokenDelegateTest extends TestCase
 {

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Server;
+namespace Ptx\Tests\Work\Server;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Server\Guard;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Tests\TestCase;
+use Ptx\Work\Server\Guard;
 use Symfony\Component\HttpFoundation\Request;
 
 class GuardTest extends TestCase

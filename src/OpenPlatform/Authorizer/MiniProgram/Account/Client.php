@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account;
+namespace Ptx\OpenPlatform\Authorizer\MiniProgram\Account;
 
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
+use Ptx\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
 
 /**
  * Class Client.

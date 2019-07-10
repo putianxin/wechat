@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\ActivityMessage;
+namespace Ptx\MiniProgram\ActivityMessage;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
 
 class Client extends BaseClient
 {
     /**
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function createActivityId()
     {
@@ -29,7 +29,7 @@ class Client extends BaseClient
      * @param int    $state
      * @param array  $params
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
      * @throws InvalidArgumentException
      */

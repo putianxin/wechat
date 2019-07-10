@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\OCR;
+namespace Ptx\Tests\OfficialAccount\OCR;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\OfficialAccount\OCR\Client;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\OfficialAccount\OCR\Client;
+use Ptx\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

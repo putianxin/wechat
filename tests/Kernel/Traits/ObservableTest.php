@@ -9,16 +9,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Ptx\Tests\Kernel\Traits;
 
 use Closure;
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Kernel\Decorators\TerminateResult;
-use EasyWeChat\Kernel\Exceptions\Exception;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Traits\Observable;
-use EasyWeChat\Tests\TestCase;
+use Ptx\Kernel\Contracts\EventHandlerInterface;
+use Ptx\Kernel\Decorators\FinallyResult;
+use Ptx\Kernel\Decorators\TerminateResult;
+use Ptx\Kernel\Exceptions\Exception;
+use Ptx\Kernel\ServiceContainer;
+use Ptx\Kernel\Traits\Observable;
+use Ptx\Tests\TestCase;
 
 class ObservableTest extends TestCase
 {
@@ -311,7 +311,7 @@ class ObservableTest extends TestCase
             $c = new DummyClassForObservableTest();
             $c->push('stdClass', 'foo');
         } catch (\Exception $e) {
-            $this->assertSame('Class "stdClass" not an instance of "EasyWeChat\Kernel\Contracts\EventHandlerInterface".', $e->getMessage());
+            $this->assertSame('Class "stdClass" not an instance of "Ptx\Kernel\Contracts\EventHandlerInterface".', $e->getMessage());
         }
 
         try {

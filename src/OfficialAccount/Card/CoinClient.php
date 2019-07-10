@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Ptx\OfficialAccount\Card;
 
-use EasyWeChat\Kernel\BaseClient;
+use Ptx\Kernel\BaseClient;
 
 /**
  * Class CoinClient.
@@ -21,7 +21,7 @@ use EasyWeChat\Kernel\BaseClient;
 class CoinClient extends BaseClient
 {
     /**
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function activate()
     {
@@ -32,7 +32,7 @@ class CoinClient extends BaseClient
      * @param string $cardId
      * @param int    $quantity
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function getPrice(string $cardId, int $quantity)
     {
@@ -43,7 +43,7 @@ class CoinClient extends BaseClient
     }
 
     /**
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function summary()
     {
@@ -53,7 +53,7 @@ class CoinClient extends BaseClient
     /**
      * @param int $count
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function recharge(int $count)
     {
@@ -65,7 +65,7 @@ class CoinClient extends BaseClient
     /**
      * @param string $orderId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function order(string $orderId)
     {
@@ -75,7 +75,7 @@ class CoinClient extends BaseClient
     /**
      * @param array $filters
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function orders(array $filters)
     {
@@ -87,7 +87,7 @@ class CoinClient extends BaseClient
      * @param string $orderId
      * @param int    $quantity
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Ptx\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     public function confirm(string $cardId, string $orderId, int $quantity)
     {

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\NearbyPoi;
+namespace Ptx\MiniProgram\NearbyPoi;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\Kernel\BaseClient;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class Client.
@@ -29,7 +29,7 @@ class Client extends BaseClient
      * @param string $address
      * @param string $proofMaterial
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function add(string $name, string $credential, string $address, string $proofMaterial = null)
     {
@@ -46,7 +46,7 @@ class Client extends BaseClient
      *
      * @param string $poiId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function delete(string $poiId)
     {
@@ -61,7 +61,7 @@ class Client extends BaseClient
      * @param int $page
      * @param int $pageRows
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function list(int $page, int $pageRows)
     {
@@ -77,7 +77,7 @@ class Client extends BaseClient
      * @param string $poiId
      * @param int    $status
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      */
     public function setVisibility(string $poiId, int $status)
     {

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\UniformMessage;
+namespace Ptx\MiniProgram\UniformMessage;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\OfficialAccount\TemplateMessage\Client as BaseClient;
+use Ptx\Kernel\Exceptions\InvalidArgumentException;
+use Ptx\OfficialAccount\TemplateMessage\Client as BaseClient;
 
 class Client extends BaseClient
 {
@@ -124,7 +124,7 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function baseFormat($data = [], $default = [])
     {

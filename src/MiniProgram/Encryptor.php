@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram;
+namespace Ptx\MiniProgram;
 
-use EasyWeChat\Kernel\Encryptor as BaseEncryptor;
-use EasyWeChat\Kernel\Exceptions\DecryptException;
-use EasyWeChat\Kernel\Support\AES;
+use Ptx\Kernel\Encryptor as BaseEncryptor;
+use Ptx\Kernel\Exceptions\DecryptException;
+use Ptx\Kernel\Support\AES;
 
 /**
  * Class Encryptor.

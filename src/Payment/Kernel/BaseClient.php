@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Kernel;
+namespace Ptx\Payment\Kernel;
 
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\Kernel\Traits\HasHttpRequests;
-use EasyWeChat\Payment\Application;
+use Ptx\Kernel\Support;
+use Ptx\Kernel\Traits\HasHttpRequests;
+use Ptx\Payment\Application;
 use GuzzleHttp\MessageFormatter;
 use GuzzleHttp\Middleware;
 use Psr\Http\Message\ResponseInterface;
@@ -28,14 +28,14 @@ class BaseClient
     use HasHttpRequests { request as performRequest; }
 
     /**
-     * @var \EasyWeChat\Payment\Application
+     * @var \Ptx\Payment\Application
      */
     protected $app;
 
     /**
      * Constructor.
      *
-     * @param \EasyWeChat\Payment\Application $app
+     * @param \Ptx\Payment\Application $app
      */
     public function __construct(Application $app)
     {
@@ -63,10 +63,10 @@ class BaseClient
      * @param array  $options
      * @param bool   $returnResponse
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function request(string $endpoint, array $params = [], $method = 'post', array $options = [], $returnResponse = false)
     {
@@ -122,8 +122,8 @@ class BaseClient
      *
      * @return ResponseInterface
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function requestRaw($endpoint, array $params = [], $method = 'post', array $options = [])
     {
@@ -138,10 +138,10 @@ class BaseClient
      * @param string $method
      * @param array  $options
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Ptx\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Ptx\Kernel\Exceptions\InvalidConfigException
+     * @throws \Ptx\Kernel\Exceptions\InvalidArgumentException
      */
     protected function safeRequest($endpoint, array $params, $method = 'post', array $options = [])
     {
