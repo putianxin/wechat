@@ -15,6 +15,7 @@ use Ptx\Kernel\Contracts\AccessTokenInterface;
 use Ptx\Kernel\Exceptions\HttpException;
 use Ptx\Kernel\Exceptions\InvalidArgumentException;
 use Ptx\Kernel\Exceptions\RuntimeException;
+use Ptx\Kernel\Log\LogManager;
 use Ptx\Kernel\Traits\HasHttpRequests;
 use Ptx\Kernel\Traits\InteractsWithCache;
 use Pimple\Container;
@@ -117,9 +118,18 @@ abstract class AccessToken implements AccessTokenInterface
 
         $token = $this->requestToken($this->getCredentials(), true);
 
+        $this->tokenLogger($token);
+
         $this->setToken($token[$this->tokenKey], $token['expires_in'] ?? 7200);
 
         return $token;
+    }
+
+    private function tokenLogger($token)
+    {
+        $app = new ServiceContainer();
+        $log = new LogManager($app);
+        $log->info('getTokenLog', $token);
     }
 
     /**
