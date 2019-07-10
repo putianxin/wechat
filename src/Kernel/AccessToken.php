@@ -11,11 +11,13 @@
 
 namespace Ptx\Kernel;
 
+use App\Libraries\Logger\Logger;
+use Exception;
+use Illuminate\Support\Facades\Redis;
 use Ptx\Kernel\Contracts\AccessTokenInterface;
 use Ptx\Kernel\Exceptions\HttpException;
 use Ptx\Kernel\Exceptions\InvalidArgumentException;
 use Ptx\Kernel\Exceptions\RuntimeException;
-use Ptx\Kernel\Log\LogManager;
 use Ptx\Kernel\Traits\HasHttpRequests;
 use Ptx\Kernel\Traits\InteractsWithCache;
 use Pimple\Container;
@@ -60,7 +62,7 @@ abstract class AccessToken implements AccessTokenInterface
     /**
      * @var int
      */
-    protected $safeSeconds = 500;
+    protected $safeSeconds = 10;
 
     /**
      * @var string
@@ -121,15 +123,15 @@ abstract class AccessToken implements AccessTokenInterface
         $this->tokenLogger($token);
 
         $this->setToken($token[$this->tokenKey], $token['expires_in'] ?? 7200);
+        $this->setOtherToken($token[$this->tokenKey], $token['expires_in'] ?? 7200);
 
         return $token;
     }
 
     private function tokenLogger($token)
     {
-        $app = new ServiceContainer();
-        $log = new LogManager($app);
-        $log->info('getTokenLog', $token);
+        $logger = Logger::init(Logger::CHANNEL_WECHAT);
+        $logger->info('refreshToken',['token'=>$token]);
     }
 
     /**
@@ -152,6 +154,20 @@ abstract class AccessToken implements AccessTokenInterface
             throw new RuntimeException('Failed to cache access token.');
         }
 
+        return $this;
+    }
+
+    public function setOtherToken(string $token,int $lifetime = 7200): AccessTokenInterface
+    {
+        try {
+            $cache = Redis::connection('other');
+            $cache->set($this->getCacheKey(), serialize([
+                $this->tokenKey => $token,
+                'expires_in' => $lifetime,
+            ]), $lifetime - $this->safeSeconds);
+        }catch (Exception $exception){
+            return $this;
+        }
         return $this;
     }
 
